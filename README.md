@@ -4,7 +4,7 @@
 
 This repository contains an experimental evaluation of whether modern large language models (LLMs) can function as a firewall-like decision layer for web applications by classifying real-world malicious payloads and malicious look alike payloads. The experiment focuses on three common vulnerability categories:
 
-**SQL Injection (SQLi)**
+**SQL Injection (SQLi),**
 **Cross-Site Scripting (XSS)**
 **Server-Side Request Forgery (SSRF)**
 
