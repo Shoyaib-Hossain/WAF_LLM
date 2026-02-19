@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains an experimental evaluation of whether modern large language models (LLMs) can function as a **firewall-like decision layer** for web applications by classifying **real-world malicious payloads**. The study focuses on three common vulnerability categories:
+This repository contains an experimental evaluation of whether modern large language models (LLMs) can function as a firewall-like decision layer for web applications by classifying real-world malicious payloads and malicious look alike payloads. The experiment focuses on three common vulnerability categories:
 
 * **SQL Injection (SQLi)**
 * **Cross-Site Scripting (XSS)**
@@ -28,10 +28,10 @@ Each payload is classified across **two dimensions**:
 These dimensions produce one of three **mutually exclusive labels**:
 
 * **Malicious-Unsafe**
-  Resembles a known attack vector **and** is syntactically valid / executable.
+  Resembles a known attack vector and is syntactically valid / executable.
 
 * **MaliciousIntended-but-safe**
-  Resembles a known attack vector **but** contains syntax errors, misspellings, incomplete constructs, or context issues that would prevent execution.
+  Resembles a known attack vector but contains syntax errors, misspellings, incomplete constructs, or context issues that would prevent execution.
 
 * **Safe**
   Does **not** resemble a known attack vector.
@@ -75,7 +75,7 @@ Some payloads include literal double-quote characters (`"`), especially in HTML/
 
 * `xmlns=""http://www.w3.org/1999/xhtml""`
 
-This is **normal CSV escaping**:
+This is normal CSV escaping:
 
 * CSV fields containing special characters are often wrapped in quotes:
   `" ... "`
@@ -91,13 +91,4 @@ will appear CSV-encoded as:
 
 * `<script xmlns=""http://www.w3.org/1999/xhtml"">`
 
-This does **not** change the underlying value; most CSV readers will automatically decode it back to normal quotes when parsed. If you want to avoid this representation for human viewing, consider exporting in **TSV** or **JSON** instead of CSV.
-
----
-
-
-If you want, I can also generate:
-
-* a clean **repo folder structure section** (based on how your directories look),
-* a **metrics section template** (accuracy vs. “Malicious-Unsafe only” ground truth, disagreement rate, conservative rate),
-* and a short **“Reproducibility”** section with suggested scripts/commands (Python/pandas).
+This does not change the underlying value; most CSV readers will automatically decode it back to normal quotes when parsed. If you want to avoid this representation for human viewing, consider exporting in TSV or JSON instead of CSV.
