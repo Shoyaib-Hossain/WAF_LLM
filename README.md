@@ -55,13 +55,6 @@ For these “malicious look-alike” datasets, the ground truth labels all sampl
 
 ---
 
-## Repository Contents (Datasets & Results)
-
-The repository includes:
-
-**Model outputs** (per model and category) and
-**Malicious look-alike datasets** (payload-shaped strings that are intended to be non-malicious)
-
 ## Method Summary
 
 This experiment is designed to be reproducible and comparable across models:
