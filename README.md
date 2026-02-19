@@ -59,14 +59,14 @@ For these “look-alike” datasets, the ground truth labels all samples as Mali
 
 The repository includes:
 
-**Model outputs** (per model and category)
-**Benign look-alike datasets** (payload-shaped strings that are intended to be non-malicious)
+**Model outputs** (per model and category) and
+**Malicious look-alike datasets** (payload-shaped strings that are intended to be non-malicious)
 
 ## Method Summary
 
 This experiment is designed to be reproducible and comparable across models:
 
-**Structured prompts** ensure consistent classification rules
+**Structured prompts** ensure consistent classification rules and
 **Same payload sets** are used across models for each vulnerability category
 
 ---
