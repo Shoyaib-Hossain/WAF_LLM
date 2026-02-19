@@ -49,9 +49,9 @@ This framing helps highlight where LLM reasoning is strong (e.g., recognizing at
 
 Malicious “Look-Alike” Strings (Non-Executable Attack Forms)
 
-In addition to CRS payloads, the experiment includes malicious “look-alike” strings: inputs that closely resemble real attack payloads in form, but are intentionally constructed to be non-executable (e.g., broken syntax, incomplete constructs, invalid encodings, or context-free fragments).
+In addition to malicious payloads, the experiment includes malicious “look-alike” strings: inputs that closely resemble real attack payloads in form, but are intentionally constructed to be non-executable (e.g., broken syntax, incomplete constructs, invalid encodings, or context-free fragments).
 
-For these “look-alike” datasets, the ground truth labels all samples as MaliciousIntended-but-safe or safe.
+For these “malicious look-alike” datasets, the ground truth labels all samples as either MaliciousIntended-but-safe or safe.
 
 ---
 
