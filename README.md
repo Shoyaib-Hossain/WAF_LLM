@@ -5,13 +5,13 @@
 This repository contains an experimental evaluation of whether modern large language models (LLMs) can function as a firewall-like decision layer for web applications by classifying real-world malicious payloads and malicious look alike payloads. The experiment focuses on three common vulnerability categories:
 
 **SQL Injection (SQLi),**
-**Cross-Site Scripting (XSS)**
+**Cross-Site Scripting (XSS) and**
 **Server-Side Request Forgery (SSRF)**
 
 A standardized, structured prompt is used to evaluate three state-of-the-art models:
 
-**ChatGPT-5.2 Thinking** (OpenAI)
-**Gemini 3 Pro** (Google)
+**ChatGPT-5.2 Thinking,** (OpenAI)
+**Gemini 3 Pro and** (Google)
 **Claude Sonnet 4.5** (Anthropic)
 
 The goal is to measure how reliably LLMs can detect malicious intent and executability, and whether they can complement or (in some settings) serve as alternatives to traditional Web Application Firewalls (WAFs).
