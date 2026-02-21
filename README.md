@@ -43,7 +43,7 @@ For the malicious datasets in this experiment, the ground truth labels all sampl
 
 That means:
 
-Any model output that deviates from the ground-truth label—i.e., classifying a sample as MaliciousIntended-but-safe or Safe when the ground truth is Malicious-Unsafe, or vice versa—is interpreted as model disagreement, conservative judgment, or a limitation in semantic threat interpretation.
+Any model output that deviates from the ground-truth label i.e., classifying a sample as MaliciousIntended-but-safe or Safe when the ground truth is Malicious-Unsafe, or vice versa is interpreted as model disagreement, conservative judgment, or a limitation in semantic threat interpretation.
 
 This framing helps highlight where LLM reasoning is strong (e.g., recognizing attack intent) and where it may be inconsistent (e.g., executability judgments, context sensitivity, or over-refusals).
 
