@@ -8,7 +8,7 @@ This repository contains an experimental evaluation of whether modern large lang
 **Cross-Site Scripting (XSS) and**
 **Server-Side Request Forgery (SSRF)**
 
-A standardized, structured prompt is used to evaluate three state-of-the-art models:
+A standardised, structured prompt is used to evaluate three state-of-the-art models:
 
 **ChatGPT-5.2 Thinking,** (OpenAI)
 **Gemini 3 Pro** (Google) and
@@ -45,7 +45,7 @@ That means:
 
 Any model output that deviates from the ground-truth label i.e., classifying a sample as MaliciousIntended-but-safe or Safe when the ground truth is Malicious-Unsafe, or vice versa is interpreted as model disagreement, conservative judgment, or a limitation in semantic threat interpretation.
 
-This framing helps highlight where LLM reasoning is strong (e.g., recognizing attack intent) and where it may be inconsistent (e.g., executability judgments, context sensitivity, or over-refusals).
+This framing helps highlight where LLM reasoning is strong (e.g., recognising attack intent) and where it may be inconsistent (e.g., executability judgments, context sensitivity, or over-refusals).
 
 ---
 
