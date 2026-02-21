@@ -39,19 +39,13 @@ These dimensions produce one of three **mutually exclusive labels**:
 ---
 **Ground Truth Assumption**
 
-For the malicious datasets in this experiment, the ground truth labels all samples as Malicious-Unsafe.
+For the malicious datasets in this experiment, the ground truth labels all samples as either Malicious-Unsafe or MaliciousIntended-but-safe or Safe.
 
 That means:
 
-Any output that is not Malicious-Unsafe (i.e., MaliciousIntended-but-safe or Safe) represents model disagreement, conservative judgment, or a limitation in semantic threat interpretation.
+Any model output that deviates from the ground-truth label—i.e., classifying a sample as MaliciousIntended-but-safe or Safe when the ground truth is Malicious-Unsafe, or vice versa—is interpreted as model disagreement, conservative judgment, or a limitation in semantic threat interpretation.
 
 This framing helps highlight where LLM reasoning is strong (e.g., recognizing attack intent) and where it may be inconsistent (e.g., executability judgments, context sensitivity, or over-refusals).
-
-Malicious “Look-Alike” Strings (Non-Executable Attack Forms)
-
-In addition to malicious payloads, the experiment includes malicious “look-alike” strings: inputs that closely resemble real attack payloads in form, but are intentionally constructed to be non-executable (e.g., broken syntax, incomplete constructs, invalid encodings, or context-free fragments).
-
-For these “malicious look-alike” datasets, the ground truth labels all samples as either MaliciousIntended-but-safe or safe.
 
 ---
 
