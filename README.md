@@ -54,6 +54,7 @@ This framing helps highlight where LLM reasoning is strong (e.g., recognising at
 This experiment is designed to be reproducible and comparable across models:
 
 **Structured prompts** ensure consistent classification rules and
+
 **Same payload sets** are used across models for each vulnerability category
 
 ---
