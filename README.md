@@ -37,7 +37,7 @@ These dimensions produce one of three **mutually exclusive labels**:
   Does not resemble a known attack vector.
 
 ---
-**Ground Truth Assumption**
+## Ground Truth Assumption
 
 For the malicious datasets in this experiment, the ground truth labels all samples as either Malicious-Unsafe or MaliciousIntended-but-safe or Safe.
 
