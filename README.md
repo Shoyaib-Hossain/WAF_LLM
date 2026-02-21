@@ -34,7 +34,7 @@ These dimensions produce one of three **mutually exclusive labels**:
   Resembles a known attack vector but contains syntax errors, misspellings, incomplete constructs, or context issues that would prevent execution.
 
 **Safe**
-  Does **not** resemble a known attack vector.
+  Does not resemble a known attack vector.
 
 ---
 **Ground Truth Assumption**
